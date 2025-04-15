@@ -1,4 +1,5 @@
 "use client";
+import { Suspense } from "react";
 import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Markdown from "react-markdown";
@@ -9,9 +10,6 @@ import Confetti from "@/components/Confetti";
 import { useUser } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
 
-
-
-
 // Define the type for a quiz question
 type Question = {
   question: string;
@@ -19,12 +17,12 @@ type Question = {
   correctOption: string;
 };
 
-export default function GeneratedQuiz() {
+function QuizContent() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [loading, setLoading] = useState(true);
 
   const { user } = useUser();
-  const userId = user?.id; 
+  const userId = user?.id;
 
   const searchParams = useSearchParams();
   const topicName = searchParams.get("topic") || "your topic";
@@ -37,8 +35,6 @@ export default function GeneratedQuiz() {
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, string>>({});
   const router = useRouter();
   const [difficulty, setDifficulty] = useState<string | null>(null);
- 
-
 
   useEffect(() => {
     const storedQuiz = localStorage.getItem("generatedQuiz");
@@ -74,7 +70,7 @@ export default function GeneratedQuiz() {
 
   const onSubmit = async () => {
     let newScore = 0;
-  
+
     questions.forEach((question, index) => {
       const selected = selectedAnswers[index]?.toString().trim().toLowerCase();
       const correct = question.correctOption?.toString().trim().toLowerCase();
@@ -82,17 +78,17 @@ export default function GeneratedQuiz() {
         newScore += 1;
       }
     });
-  
+
     setScore(newScore);
     setCurrentBatch(totalBatches);
     setResponse("");
-  
+
     // Difficulty Multiplier
     const difficultyMultiplier = difficulty === "beginner" ? 1 : difficulty === "intermediate" ? 2 : 3;
-  
+
     // Quiz Points Calculation
     const quizPoints = newScore * difficultyMultiplier;
-  
+
     // Medal Determination
     let medal = "";
     let medalPoints = 0;
@@ -109,17 +105,16 @@ export default function GeneratedQuiz() {
       medal = "💔 Try Again";
       medalPoints = -15;
     }
-  
+
     // Total Points Calculation
     let totalPoints = quizPoints + medalPoints;
-  
+
     if (!userId) {
       console.error("User ID is missing!");
       return;
     }
 
     try {
-      
       // ✅ Send final update request
       await fetch("/api/user/update", {
         method: "PUT",
@@ -136,7 +131,7 @@ export default function GeneratedQuiz() {
     } catch (error) {
       console.error("Error updating user points:", error);
     }
-  
+
     // Fetch learning path suggestion
     try {
       const response = await fetch("/api/chat", {
@@ -146,7 +141,7 @@ export default function GeneratedQuiz() {
           userPrompt: `Hello, I scored ${newScore}/${questions.length} in ${topicName}. Can you suggest a learning path for ${topicName}?`,
         }),
       });
-  
+
       const data = await response.json();
       setResponse(data.text);
     } catch (error) {
@@ -167,14 +162,14 @@ export default function GeneratedQuiz() {
     <div className="flex flex-col h-screen">
       {/* ✅ Navbar */}
       <Navbar />
-  
+
       <div className="flex flex-grow">
         {/* Left Section */}
         <div className="w-1/4 bg-gray-100 p-6 flex flex-col justify-center">
           <h2 className="text-lg font-semibold">Quiz Navigation</h2>
           <p className="mt-2">Generated Quiz</p>
         </div>
-  
+
         {/* Main Section */}
         <div className="w-1/2 flex flex-col justify-start items-center p-8 pt-10 overflow-y-auto max-h-screen">
           {loading ? (
@@ -226,9 +221,9 @@ export default function GeneratedQuiz() {
               <h1 className="text-2xl mt-2 font-bold">
                 You scored {score} out of {questions.length}
               </h1>
-  
+
               <Confetti />
-  
+
               {/* Medal System */}
               {score >= 30 ? (
                 <h2 className="text-xl font-bold text-green-500">🏅 Gold Medal!</h2>
@@ -239,7 +234,7 @@ export default function GeneratedQuiz() {
               ) : (
                 <h2 className="text-xl font-bold text-red-500">💔 Try Again!</h2>
               )}
-  
+
               {/* Learning Path */}
               <div className="w-full max-w-2xl bg-gray-100 p-4 rounded-md shadow">
                 <h2 className="text-lg font-semibold">Suggested Learning Path:</h2>
@@ -247,7 +242,7 @@ export default function GeneratedQuiz() {
                   <Markdown>{response || output}</Markdown>
                 </div>
               </div>
-  
+
               {/* Buttons: Upload New Notes & View Results */}
               <div className="flex gap-4">
                 <Button onClick={onRestart}>Upload New Notes</Button>
@@ -292,7 +287,7 @@ export default function GeneratedQuiz() {
             </div>
           )}
         </div>
-  
+
         {/* Right Section */}
         <div className="w-1/4 bg-gray-100 p-6 flex flex-col justify-center">
           <h2 className="text-lg font-semibold">Quiz Progress</h2>
@@ -304,5 +299,13 @@ export default function GeneratedQuiz() {
         </div>
       </div>
     </div>
-  );  
+  );
+}
+
+export default function GeneratedQuiz() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <QuizContent />
+    </Suspense>
+  );
 }
