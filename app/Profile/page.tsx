@@ -107,7 +107,7 @@ const Profile: React.FC = () => {
 
       {/* Profile Section */}
       <div className="text-center mb-6 mt-6">
-        <h1 className="text-3xl font-bold">{user.fullName}'s Profile</h1>
+        <h1 className="text-3xl font-bold">{user.fullName}&apos;s Profile</h1>
         <p className="text-gray-500">Track your progress and achievements</p>
       </div>
 
