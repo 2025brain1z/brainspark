@@ -70,7 +70,7 @@ export default function UploadNotes() {
       localStorage.setItem("generatedQuiz", JSON.stringify(data.questions));
 
       // ✅ Redirect to the generated quiz page
-      router.push("/quiz/generated");
+      router.push(`/quiz/generated?topic=${encodeURIComponent(topic)}`);
     } catch (err) {
       setError(err instanceof Error ? err.message : "An unexpected error occurred.");
       console.error("Upload error:", err);
