@@ -6,7 +6,6 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import Navbar from "@/components/Navbar";
 
-export let topicName = "";
 
 
 export default function UploadNotes() {
@@ -23,7 +22,6 @@ export default function UploadNotes() {
   const handleTopicChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.slice(0, 100); // Enforce 100-char limit
     setTopic(value);
-    topicName = value; // Update exported variable
   };
 
 
