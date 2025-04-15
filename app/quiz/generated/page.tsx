@@ -1,14 +1,14 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Markdown from "react-markdown";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import Confetti from "@/components/Confetti";
-import { topicName } from "@/app/UploadNotes/page";
 import { useUser } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
+
 
 
 
@@ -25,6 +25,9 @@ export default function GeneratedQuiz() {
 
   const { user } = useUser();
   const userId = user?.id; 
+
+  const searchParams = useSearchParams();
+  const topicName = searchParams.get("topic") || "your topic";
 
   const [score, setScore] = useState(0);
   const [response, setResponse] = useState("");
