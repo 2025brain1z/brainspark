@@ -96,7 +96,7 @@ export default function Courses() {
 
         {/* Can't Find a Course? */}
         <div className="text-center mt-10">
-          <h2 className="text-xl font-semibold text-gray-800">Can't find a course?</h2>
+          <h2 className="text-xl font-semibold text-gray-800">Can&apos;t find a course?</h2>
           <Link href="/UploadNotes">
             <button className="mt-3 bg-blue-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700">
               Get Custom Questions
