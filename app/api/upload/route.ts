@@ -36,7 +36,7 @@ export async function POST(req: NextRequest) {
             return NextResponse.json({ error: "Failed to generate questions" }, { status: 500 });
         }
 
-        // Save questions to data/generated.d.ts
+        // Save questions to /tmp
         const saved = await saveQuestionsToFile(questions);
 
         if (!saved) {

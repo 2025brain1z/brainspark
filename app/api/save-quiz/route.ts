@@ -10,7 +10,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Invalid questions data" }, { status: 400 });
     }
 
-    const filePath = path.join(process.cwd(), "data", "currentquiz.d.ts");
+    const filePath = path.join("/tmp", "currentquiz.d.ts");
 
     // Formatting the questions as a TypeScript export
     const fileContent = `export const questions = ${JSON.stringify(questions, null, 2)};`;

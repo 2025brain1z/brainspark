@@ -1,387 +1,343 @@
 export const generatedQuestions = [
   {
-    "question": "What is the definition of Human-Computer Interaction (HCI)?",
+    "question": "What is the primary focus of Human-Computer Interaction (HCI)?",
     "options": [
-      "The study of how humans interact with computers",
       "The design of computer hardware",
-      "The programming of software applications",
-      "The management of computer systems"
+      "The interaction between users and computers",
+      "The development of programming languages",
+      "The analysis of user data"
     ],
-    "correctOption": "The study of how humans interact with computers",
+    "correctOption": "The interaction between users and computers",
     "difficulty": "beginner"
   },
   {
-    "question": "Which combination of fields contributed to the development of HCI?",
+    "question": "Which of the following is NOT listed as a benefit of user interfaces?",
     "options": [
-      "Sociology and Biology",
-      "Experimental Psychology and Computer Science",
-      "Mechanical Engineering and Physics",
-      "Education and Business"
+      "Improved learning for children",
+      "Enhanced productivity for users with disabilities",
+      "Increased demand for typesetters",
+      "Creative possibilities for graphic artists"
     ],
-    "correctOption": "Experimental Psychology and Computer Science",
+    "correctOption": "Increased demand for typesetters",
     "difficulty": "beginner"
   },
   {
-    "question": "What is one of the benefits of user interfaces mentioned in the text?",
+    "question": "What are the three key elements that define a good interface?",
     "options": [
-      "Increased need for telephone operators",
-      "Improved learning by children",
-      "Decreased creativity in graphic arts",
-      "Less accessibility for users with disabilities"
+      "Usability, universality, usefulness",
+      "Efficiency, satisfaction, aesthetics",
+      "Accessibility, reliability, simplicity",
+      "Functionality, design, speed"
     ],
-    "correctOption": "Improved learning by children",
+    "correctOption": "Usability, universality, usefulness",
     "difficulty": "beginner"
   },
   {
-    "question": "What is a con of user interfaces for individuals?",
+    "question": "What principle is NOT mentioned as part of achieving a good interface?",
     "options": [
-      "Improved productivity",
-      "Reduction in the need for telephone operators",
-      "Better accessibility for the disabled",
-      "Increased creative possibilities"
+      "Sensitivity to user needs",
+      "Devotion to requirements analysis",
+      "Strict adherence to aesthetic design",
+      "Diligent testing"
     ],
-    "correctOption": "Reduction in the need for telephone operators",
+    "correctOption": "Strict adherence to aesthetic design",
     "difficulty": "beginner"
   },
   {
-    "question": "What are wearable interfaces mentioned in the text?",
+    "question": "Which of the following is a method for gathering user feedback on interfaces?",
     "options": [
-      "Interfaces that can be used on computers",
-      "Interfaces that are designed to be worn on the body",
-      "Interfaces that are only available on mobile devices",
-      "Interfaces that require no user interaction"
+      "Surveys",
+      "Observation",
+      "Interviews",
+      "All of the above"
     ],
-    "correctOption": "Interfaces that are designed to be worn on the body",
+    "correctOption": "All of the above",
     "difficulty": "beginner"
   },
   {
-    "question": "What is one of the usability goals for a good user interface?",
+    "question": "What is the primary goal of usability motivations in interface design?",
     "options": [
-      "Universality",
+      "To reduce costs",
+      "To create interest in usability",
+      "To limit user feedback",
+      "To streamline production"
+    ],
+    "correctOption": "To create interest in usability",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "Which user interface element is crucial for providing a clear mental picture to users?",
+    "options": [
+      "Complex menus",
+      "Interactive prototypes",
+      "Error messages",
+      "Ambiguous instructions"
+    ],
+    "correctOption": "Interactive prototypes",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "What is the outcome when users experience positive feelings of success with an interface?",
+    "options": [
+      "Increased frustration",
+      "Decreased usage",
+      "Competence of use",
+      "Mastery among users"
+    ],
+    "correctOption": "Mastery among users",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "Which of the following is a potential con of advancements in user interfaces?",
+    "options": [
+      "Reduction in telephone operator jobs",
+      "Increased job opportunities in design",
+      "Enhanced user accessibility",
+      "Improved productivity"
+    ],
+    "correctOption": "Reduction in telephone operator jobs",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "What should designers consider when creating an interface?",
+    "options": [
+      "User resistance to new designs",
+      "Budget constraints only",
+      "Aesthetics before functionality",
+      "Technical specifications alone"
+    ],
+    "correctOption": "User resistance to new designs",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "What type of research can be facilitated by user interfaces?",
+    "options": [
+      "Historical research",
+      "Academic and business research",
+      "Purely theoretical research",
+      "Artistic research"
+    ],
+    "correctOption": "Academic and business research",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "What is a mockup in interface design?",
+    "options": [
+      "A prototype that is fully functional",
+      "A visual representation of the design",
+      "A type of user feedback",
+      "A final product"
+    ],
+    "correctOption": "A visual representation of the design",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "Which of the following is a usability measure for evaluating systems?",
+    "options": [
+      "User satisfaction",
+      "Cost of production",
+      "Market share",
+      "Aesthetic design"
+    ],
+    "correctOption": "User satisfaction",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "What does 'universal usability' refer to?",
+    "options": [
+      "Usability for a specific group",
+      "Usability that is accessible to all users",
+      "Usability that focuses only on aesthetics",
+      "Usability that is only applicable in certain contexts"
+    ],
+    "correctOption": "Usability that is accessible to all users",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "What is an important aspect of user interface design for novices?",
+    "options": [
       "Complexity",
-      "Inefficiency",
-      "Inaccessibility"
+      "Clarity",
+      "Technical jargon",
+      "Minimal feedback"
     ],
-    "correctOption": "Universality",
+    "correctOption": "Clarity",
     "difficulty": "beginner"
   },
   {
-    "question": "What principle is crucial for creating a good user interface?",
+    "question": "What can lead to user apprehension towards interfaces?",
     "options": [
-      "Thoughtful planning",
-      "Random design",
+      "Simple designs",
+      "Clear instructions",
+      "Poor design",
+      "Consistent terminology"
+    ],
+    "correctOption": "Poor design",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "What is one goal of HCI in relation to public perception?",
+    "options": [
+      "To increase complexity",
+      "To encourage fear of technology",
+      "To raise user-interface consciousness",
+      "To minimize user feedback"
+    ],
+    "correctOption": "To raise user-interface consciousness",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "Which of the following is a characteristic of a successful user-interface designer?",
+    "options": [
       "Ignoring user feedback",
-      "Minimizing testing"
+      "Being adaptable to user needs",
+      "Focusing solely on aesthetics",
+      "Limiting design options"
     ],
-    "correctOption": "Thoughtful planning",
+    "correctOption": "Being adaptable to user needs",
     "difficulty": "beginner"
   },
   {
-    "question": "What is the first step in interface design mentioned in the text?",
+    "question": "What is a critical first step in developing a user interface?",
     "options": [
-      "Conducting extensive evaluations",
       "Determining user needs",
-      "Generating design alternatives",
-      "Selecting experienced designers"
+      "Selecting designers",
+      "Creating aesthetic designs",
+      "Finalizing the budget"
     ],
     "correctOption": "Determining user needs",
     "difficulty": "beginner"
   },
   {
-    "question": "What is a mockup used for in the design process?",
+    "question": "Which of the following is essential for conducting effective interface research?",
     "options": [
-      "To visualize the design",
-      "To hide the design",
-      "To eliminate user feedback",
-      "To reduce design complexity"
+      "Ambiguity in hypothesis",
+      "Full grasp of the problem",
+      "Ignoring variable influence",
+      "Complexity in testing"
     ],
-    "correctOption": "To visualize the design",
+    "correctOption": "Full grasp of the problem",
     "difficulty": "beginner"
   },
   {
-    "question": "Why is user training important in interface design?",
+    "question": "What role do sensors play in modern interfaces?",
     "options": [
-      "To provide a review and new perspective on the design",
-      "To complicate the interface",
-      "To reduce user interaction",
-      "To increase errors"
+      "They complicate user experience",
+      "They track user behavior only",
+      "They enable various functionalities",
+      "They limit accessibility"
     ],
-    "correctOption": "To provide a review and new perspective on the design",
+    "correctOption": "They enable various functionalities",
     "difficulty": "beginner"
   },
   {
-    "question": "What motivates designers to focus on usability?",
+    "question": "How can designers gather continuous feedback after interface implementation?",
     "options": [
-      "Lack of competition",
-      "Desire for quick and reliable outcomes",
-      "Reduction in user feedback",
-      "Decreased consumer interest"
+      "By ignoring user comments",
+      "Through observations and surveys",
+      "By limiting user interaction",
+      "By focusing on personal opinions"
     ],
-    "correctOption": "Desire for quick and reliable outcomes",
+    "correctOption": "Through observations and surveys",
     "difficulty": "beginner"
   },
   {
-    "question": "What is one goal of user interfaces for educational and professional enterprises?",
+    "question": "What does the term 'error messages' refer to in user interfaces?",
     "options": [
-      "To confuse users",
+      "Instructions for use",
+      "Feedback indicating a problem",
+      "Design features",
+      "User satisfaction measures"
+    ],
+    "correctOption": "Feedback indicating a problem",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "What is a potential benefit of wearable interfaces?",
+    "options": [
+      "Increased complexity",
+      "Reduced user engagement",
+      "Enhanced functionality",
+      "Less user control"
+    ],
+    "correctOption": "Enhanced functionality",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "What should be done to ensure a successful interface design process?",
+    "options": [
+      "Skip user evaluations",
+      "Prepare realistic schedules",
+      "Limit designer input",
+      "Focus solely on budget"
+    ],
+    "correctOption": "Prepare realistic schedules",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "What can a clear mental picture of an interface help users do?",
+    "options": [
+      "Increase confusion",
+      "Predict responses to actions",
+      "Avoid using the interface",
+      "Decrease satisfaction"
+    ],
+    "correctOption": "Predict responses to actions",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "What is one of the goals of user interfaces in professional settings?",
+    "options": [
+      "To reduce productivity",
       "To influence academic and business researchers",
-      "To lower usability standards",
-      "To minimize user engagement"
+      "To complicate user tasks",
+      "To isolate user feedback"
     ],
     "correctOption": "To influence academic and business researchers",
     "difficulty": "beginner"
   },
   {
-    "question": "What must interface researchers consider for effective research?",
-    "options": [
-      "Ignoring the problem",
-      "Using a small number of variables",
-      "Complicating hypotheses",
-      "Avoiding statistical tests"
-    ],
-    "correctOption": "Using a small number of variables",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "What kind of tools are used in user-interface creation?",
-    "options": [
-      "Tools that complicate the design",
-      "Tools for creating prototypes and maintaining consistency",
-      "Tools that reduce usability",
-      "Tools for eliminating user feedback"
-    ],
-    "correctOption": "Tools for creating prototypes and maintaining consistency",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "What is a potential source of user apprehension towards interfaces?",
-    "options": [
-      "Clear instructions",
-      "Simple designs",
-      "Poor design and complex features",
-      "Helpful error messages"
-    ],
-    "correctOption": "Poor design and complex features",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "What should users do when encountering confusing error messages?",
-    "options": [
-      "Ignore them",
-      "Express their anger to the designer",
-      "Avoid using the interface",
-      "Assume it's their fault"
-    ],
-    "correctOption": "Express their anger to the designer",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "Which of the following is NOT a usability measure mentioned in the text?",
-    "options": [
-      "Efficiency",
-      "Satisfaction",
-      "Confusion",
-      "Usability"
-    ],
-    "correctOption": "Confusion",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "What is the ultimate goal of HCI according to the text?",
-    "options": [
-      "To create confusing interfaces",
-      "To promote user-friendly interfaces",
-      "To complicate user interactions",
-      "To increase technological barriers"
-    ],
-    "correctOption": "To promote user-friendly interfaces",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "What is one way to improve user interfaces mentioned in the text?",
+    "question": "What does 'requirements analysis' involve in interface design?",
     "options": [
       "Ignoring user feedback",
-      "Continuous refinements based on observations",
-      "Limiting user input",
-      "Reducing testing"
+      "Understanding user needs",
+      "Focusing on aesthetics only",
+      "Limiting design options"
     ],
-    "correctOption": "Continuous refinements based on observations",
+    "correctOption": "Understanding user needs",
     "difficulty": "beginner"
   },
   {
-    "question": "What type of interfaces are referred to as 'under-the-skin'?",
+    "question": "Which category of users would benefit from improved user interfaces, according to the text?",
     "options": [
-      "Wearable devices",
-      "Mobile applications",
-      "Computer software",
-      "Industrial interfaces"
+      "Only technical users",
+      "Only older adults",
+      "Users with disabilities",
+      "Only children"
     ],
-    "correctOption": "Wearable devices",
+    "correctOption": "Users with disabilities",
     "difficulty": "beginner"
   },
   {
-    "question": "What is necessary for a designer to create a successful user interface?",
+    "question": "How do designers ensure interfaces meet user needs?",
     "options": [
-      "Avoiding user needs",
-      "Understanding the users and their tasks",
-      "Focusing solely on aesthetics",
-      "Ignoring feedback from testing"
+      "By avoiding user input",
+      "By conducting extensive evaluations",
+      "By focusing on aesthetics",
+      "By limiting design options"
     ],
-    "correctOption": "Understanding the users and their tasks",
+    "correctOption": "By conducting extensive evaluations",
     "difficulty": "beginner"
   },
   {
-    "question": "What is one characteristic of successful user-interface designers?",
+    "question": "Which of the following describes a 'controlled experiment' in interface research?",
     "options": [
-      "They ignore user feedback",
-      "They prioritize user needs",
-      "They limit design alternatives",
-      "They avoid testing"
+      "An uncontrolled testing environment",
+      "A systematic approach to testing hypotheses",
+      "Randomized user feedback",
+      "A focus on aesthetics"
     ],
-    "correctOption": "They prioritize user needs",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "What type of user interfaces are essential for consumer electronics?",
-    "options": [
-      "Complex interfaces",
-      "User-friendly interfaces",
-      "Inaccessible designs",
-      "Unresponsive systems"
-    ],
-    "correctOption": "User-friendly interfaces",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "What is the significance of user feedback in interface design?",
-    "options": [
-      "It complicates the design process",
-      "It is unnecessary",
-      "It helps improve usability and design",
-      "It should be ignored"
-    ],
-    "correctOption": "It helps improve usability and design",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "What are empirical tests used for in interface design?",
-    "options": [
-      "To eliminate user feedback",
-      "To test novel strategies and improvements",
-      "To complicate the design",
-      "To avoid user input"
-    ],
-    "correctOption": "To test novel strategies and improvements",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "How can designers make systems more appealing to novice users?",
-    "options": [
-      "By making them complex",
-      "By providing clear instructions",
-      "By limiting user interaction",
-      "By avoiding user training"
-    ],
-    "correctOption": "By providing clear instructions",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "How can designers effectively address the diverse needs of users?",
-    "options": [
-      "By dumb-down strategies",
-      "By rethinking interface designs",
-      "By ignoring diversity",
-      "By limiting user options"
-    ],
-    "correctOption": "By rethinking interface designs",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "What does 'universality' in usability goals refer to?",
-    "options": [
-      "Limited access",
-      "Wide accessibility for all users",
-      "Complex features",
-      "Specific user groups only"
-    ],
-    "correctOption": "Wide accessibility for all users",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "What is the role of statistical tests in interface research?",
-    "options": [
-      "To complicate results",
-      "To interpret results and refine theory",
-      "To avoid bias",
-      "To eliminate control over variables"
-    ],
-    "correctOption": "To interpret results and refine theory",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "What should be considered when developing a prototype?",
-    "options": [
-      "User needs and feedback",
-      "Ignoring user input",
-      "Limiting design options",
-      "Avoiding testing"
-    ],
-    "correctOption": "User needs and feedback",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "What is an essential aspect of user-interface design according to the text?",
-    "options": [
-      "Inaccessibility",
-      "User-centered approach",
-      "Complexity",
-      "Ignoring user feedback"
-    ],
-    "correctOption": "User-centered approach",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "What is one benefit of using interactive prototypes?",
-    "options": [
-      "They make designs harder to visualize",
-      "They provide a realistic view of the intended outcomes",
-      "They complicate user feedback",
-      "They reduce testing efficiency"
-    ],
-    "correctOption": "They provide a realistic view of the intended outcomes",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "What is the importance of conducting extensive evaluations in user-interface design?",
-    "options": [
-      "To complicate the design",
-      "To ensure usability and effectiveness",
-      "To ignore user feedback",
-      "To limit design diversity"
-    ],
-    "correctOption": "To ensure usability and effectiveness",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "What is the significance of understanding user tasks in interface design?",
-    "options": [
-      "It complicates the design process",
-      "It helps create more effective interfaces",
-      "It reduces usability",
-      "It limits design options"
-    ],
-    "correctOption": "It helps create more effective interfaces",
-    "difficulty": "beginner"
-  },
-  {
-    "question": "What should designers aim to achieve with user interfaces?",
-    "options": [
-      "Complex designs",
-      "Positive user experiences",
-      "Limited accessibility",
-      "Inconsistent terminology"
-    ],
-    "correctOption": "Positive user experiences",
+    "correctOption": "A systematic approach to testing hypotheses",
     "difficulty": "beginner"
   }
 ];

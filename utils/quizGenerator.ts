@@ -77,7 +77,7 @@ Instructions:
 
 
 export async function saveQuestionsToFile(questions: any[]) {
-    const filePath = path.join(process.cwd(), "data/generated.d.ts");
+    const filePath = path.join("/tmp", "generated.d.ts");
     const fileContent = `export const generatedQuestions = ${JSON.stringify(questions, null, 2)};`;
 
     try {
