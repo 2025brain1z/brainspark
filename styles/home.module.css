@@ -308,7 +308,7 @@
 }
 
 .homeContainer {
-    background-image: url("/public/background.JPG"); /* Update with actual image path */
+    background-image: url("/homebackground.jpg"); /* Update with actual image path */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
