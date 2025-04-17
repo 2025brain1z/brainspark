@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { writeFile, readFile } from "fs/promises";
 import path from "path";
-// @ts-ignore
-const pdfParse = require("pdf-parse");
 import { generateQuizQuestions, saveQuestionsToFile } from "@/utils/quizGenerator";
 
 export async function POST(req: NextRequest) {
+    // @ts-ignore
+    const pdfParse = require("pdf-parse");
     const formData = await req.formData();
     const file = formData.get("file") as File | null;
     const difficulty = formData.get("difficulty") as string || "medium"; // Default to medium
