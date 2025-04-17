@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { writeFile, readFile } from "fs/promises";
 import path from "path";
-import pdfParse from "pdf-parse";
+// @ts-ignore
+const pdfParse = require("pdf-parse");
 import { generateQuizQuestions, saveQuestionsToFile } from "@/utils/quizGenerator";
 
 export async function POST(req: NextRequest) {
