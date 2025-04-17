@@ -20,5 +20,11 @@ module.exports = {
     },
   };
 
-  
+
+  module.exports = {
+    experimental: {
+    serverComponentsExternalPackages: ['pdf-parse'],
+        },
+    };
+
 module.exports = nextConfig
