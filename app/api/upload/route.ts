@@ -14,8 +14,8 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ error: "No file uploaded" }, { status: 400 });
     }
 
-    // Save file to public/uploads
-    const uploadPath = path.join(process.cwd(), "public/uploads", file.name);
+    // Save to temp directory instead of /public
+    const uploadPath = path.join("/tmp", file.name);
     const bytes = await file.arrayBuffer();
     await writeFile(uploadPath, Buffer.from(bytes));
 
