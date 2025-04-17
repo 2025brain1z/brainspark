@@ -15,16 +15,9 @@ module.exports = {
 
 // next.config.js
 module.exports = {
-    eslint: {
-      ignoreDuringBuilds: true,
+experimental: {
+serverComponentsExternalPackages: ['pdf-parse'],
     },
-  };
-
-
-  module.exports = {
-    experimental: {
-    serverComponentsExternalPackages: ['pdf-parse'],
-        },
-    };
-
+};
+  
 module.exports = nextConfig
