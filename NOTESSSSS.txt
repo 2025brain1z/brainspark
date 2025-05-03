@@ -322,3 +322,57 @@ export default function Page() {
       else if (dailyStreak >= 6) streakMultiplier = 2;
   
       totalPoints = Math.ceil(totalPoints * streakMultiplier);
+
+
+
+      {currentQuestions.map((question, index) => {
+  const absoluteIndex = currentBatch * questionsPerPage + index;
+  return (
+    <div key={absoluteIndex} className="mb-6">
+      <h1 className="text-xl font-bold">{question.question}</h1>
+      <RadioGroup 
+        value={selectedAnswers[absoluteIndex] || ""}
+        onValueChange={(value) => setSelectedAnswers(prev => ({ 
+          ...prev, 
+          [absoluteIndex]: value 
+        }))}
+      >
+        {question.options.map((option, idx) => (
+          <div key={idx} className="flex items-center space-x-2">
+            <RadioGroupItem
+              value={option}
+              id={`q${absoluteIndex}-r${idx}`}
+            />
+            <Label htmlFor={`q${absoluteIndex}-r${idx}`}>{option}</Label>
+          </div>
+        ))}
+      </RadioGroup>
+    </div>
+  );
+})}
+
+{currentQuestions.map((question, index) => {
+  const absoluteIndex = currentBatch * questionsPerPage + index;
+  return (
+    <div key={absoluteIndex} className="mb-6">
+      <h1 className="text-xl font-bold">{question.question}</h1>
+      <RadioGroup 
+        value={selectedAnswers[absoluteIndex] || ""}
+        onValueChange={(value) => setSelectedAnswers(prev => ({ 
+          ...prev, 
+          [absoluteIndex]: value 
+        }))}
+      >
+        {question.options.map((option, idx) => (
+          <div key={idx} className="flex items-center space-x-2">
+            <RadioGroupItem
+              value={option}
+              id={`q${absoluteIndex}-r${idx}`}
+            />
+            <Label htmlFor={`q${absoluteIndex}-r${idx}`}>{option}</Label>
+          </div>
+        ))}
+      </RadioGroup>
+    </div>
+  );
+})}

@@ -18,23 +18,26 @@ export default function Courses() {
   // Department, Course, and Subject Structure
   const departments = {
     "Informatics": {
-      "Information Technology": ["Python", "Data Structure and Algorithm", "Introduction to Data Science", "Internet of Things"],
+      "Information Technology": ["Python", "Data Structures and Algorithms", "Introduction to Data Science", "Internet of Things"],
       "Computer Science": ["Physical Science", "Object Oriented Programming with C++", "Computer Networks", "Computer System Programming"],
       "Artificial Intelligence": ["Data Analysis using Excel", "AI Representation and Problem Solving", "Digital Signal Processing", "Design of AI Products"],
     },
     "Business": {
-      "Accounting": ["Intro to Doing Business in Africa", "Database Management System", "Business Finance", "Corporate Finance"],
+      "Accounting": ["Introduction to Doing Business in Africa", "Database Management System", "Business Finance", "Corporate Finance"],
       "Banking and Finance": ["Essential Maths for Business", "Banking Law and Practice", "Management and Organizational Behavior", "Fixed Income Analysis"],
       "Entrepreneurship": ["Fundamentals of Innovation and Entrepreneurship", "Financial Statement for Decision Making", "E-commerce for Entrepreneurship", "Customer Experience for Design"],
     },
     "Engineering": {
       "Computer Engineering": ["Intro to Engineering", "Computer Systems to Engineering", "Microprocessors and Microcontrollers", "Computer Security"],
-      "BioMedical Engineering": ["Intro to BioMed Engineering", "Circuit Theory", "Biochemistry", "Medical Devices and Technologies"],
+      "BioMedical Engineering": ["Intro to BioMedical Engineering", "Circuit Theory", "Biochemistry", "Medical Devices and Technologies"],
       "Robotics": ["Engineering Mechanics", "Sensors, Measurements and Instrumentations", "Signals and Systems", "Computer Vision"],
     },
     "Communication Arts": {
       "Journalism and Mass Communication": ["Writing for Media", "Online Journalism", "Media Research", "Media Culture and Society"],
       "Advertisement and Public Relations": ["History of Media", "Internet and New Media", "Public Relations Writing", "Events Planning and Management"],
+    },
+    "Common Courses": {
+      "General Studies": ["Professional Ethics 1", "Professional Ethics 2", "Professional Ethics 3"],
     },
   };
 

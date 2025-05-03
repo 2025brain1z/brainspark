@@ -28,7 +28,7 @@ export default function Page() {
   const [output, setOutput] = useState("The response will appear here...");
   const [currentBatch, setCurrentBatch] = useState(0);
   const questionsPerPage = 10;
-  const [selectedAnswers, setSelectedAnswers] = useState({});
+  const [selectedAnswers, setSelectedAnswers] = useState<{[key: number]: string}>({});
 
   const saveQuestionsToFile = async (questions) => {
     try {
@@ -173,7 +173,7 @@ export default function Page() {
     });
   }, [response]);
 
-  const viewResults = () => {
+  const viewAnswers = () => {
     window.open("/quiz/results", "_blank");
   };
 
@@ -190,10 +190,10 @@ export default function Page() {
         <div className="w-1/4 bg-gray-100 p-6 flex flex-col justify-center">
           <h2 className="text-lg font-semibold">Quiz Navigation</h2>
           <p className="mt-2">
-            You are answering questions for: <strong>{name}</strong>
+            You are answering questions for: <strong>{name ? name.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ').replace(/%2C/g, ',') : ""}</strong>
           </p>
           <p>
-            Difficulty: <strong>{difficulty ?? "Not Selected"}</strong>
+            Difficulty: <strong>{difficulty ? difficulty.charAt(0).toUpperCase() + difficulty.slice(1) : "Not Selected"}</strong>
           </p>
         </div>
   
@@ -232,23 +232,31 @@ export default function Page() {
                 Question {currentBatch * 10 + 1}-{Math.min((currentBatch + 1) * 10, questions.length)} of {questions.length}
               </h2>
               <div className="w-full max-w-2xl pb-10">
-                {currentQuestions.map((question, index) => (
-                  <div key={index} className="mb-6">
-                    <h1 className="text-xl font-bold">{question.question}</h1>
-                    <RadioGroup value={selectedAnswers[index] || ""}>
-                      {question.options.map((option, idx) => (
-                        <div key={idx} className="flex items-center space-x-2">
-                          <RadioGroupItem
-                            value={option}
-                            id={`q${index}-r${idx}`}
-                            onClick={() => setSelectedAnswers(prev => ({ ...prev, [index]: option }))}
-                          />
-                          <Label htmlFor={`q${index}-r${idx}`}>{option}</Label>
-                        </div>
-                      ))}
-                    </RadioGroup>
-                  </div>
-                ))}
+                {currentQuestions.map((question, index) => {
+                  const absoluteIndex = currentBatch * questionsPerPage + index;
+                  return (
+                    <div key={absoluteIndex} className="mb-6">
+                      <h1 className="text-xl font-bold">{question.question}</h1>
+                      <RadioGroup 
+                        value={selectedAnswers[absoluteIndex] || ""}
+                        onValueChange={(value) => setSelectedAnswers(prev => ({ 
+                          ...prev, 
+                          [absoluteIndex]: value 
+                        }))}
+                      >
+                        {question.options.map((option, idx) => (
+                          <div key={idx} className="flex items-center space-x-2">
+                            <RadioGroupItem
+                              value={option}
+                              id={`q${absoluteIndex}-r${idx}`}
+                            />
+                            <Label htmlFor={`q${absoluteIndex}-r${idx}`}>{option}</Label>
+                          </div>
+                        ))}
+                      </RadioGroup>
+                    </div>
+                  );
+                })}
               </div>
               <div className="flex gap-4 mt-6">
                 <Button onClick={onPrevious} disabled={currentBatch === 0}>Previous</Button>
@@ -304,14 +312,32 @@ export default function Page() {
                             <h1>Quiz Results</h1>
                             ${questions
                               .map(
-                                (q, i) => `
-                              <div class="question">
-                                <p><strong>Q${i + 1}:</strong> ${q.question}</p>
-                                <p class="correct">Correct Answer: ${q.correctOption}</p>
-                              </div>
-                            `
+                                (q, i) => {
+                                  const userAnswer = selectedAnswers[i];
+                                  const isAnswered = userAnswer !== undefined && userAnswer !== null && userAnswer !== '';
+                                  const isCorrect = isAnswered && userAnswer?.toString().toLowerCase() === q.correctOption?.toString().toLowerCase();
+                                  
+                                  return `
+                                    <div class="question">
+                                      <p><strong>Question ${i + 1}:</strong> ${q.question}</p>
+                                      <p class="answer-status ${!isAnswered ? 'unanswered' : isCorrect ? 'correct' : 'incorrect'}">
+                                        Your Answer: ${!isAnswered ? 'Not answered' : userAnswer}
+                                        ${!isAnswered ? ' ⚠️' : isCorrect ? ' ✅' : ' ❌'}
+                                      </p>
+                                      <p class="correct-answer correct">
+                                        Correct Answer: ${q.correctOption}
+                                      </p>
+                                    </div>
+                                  `;
+                                }
                               )
                               .join("")}
+                            <div style="margin-top: 20px; padding: 10px; background-color: #f0f0f0; border-radius: 4px;">
+                              <p><strong>Legend:</strong></p>
+                              <p>✅ Correct Answer</p>
+                              <p>❌ Incorrect Answer</p>
+                              <p>⚠️ Question Not Answered</p>
+                            </div>
                           </body>
                         </html>
                       `);
@@ -320,7 +346,7 @@ export default function Page() {
                     }
                   }}
                 >
-                  View Results
+                  View Answers
                 </Button>
               </div>
             </div>
@@ -341,4 +367,4 @@ export default function Page() {
       </div>
     </div>
   );  
-}    
+}

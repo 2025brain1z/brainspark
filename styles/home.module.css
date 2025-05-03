@@ -9,11 +9,11 @@
     flex-direction: column;
     gap: 0px; /* No spaces between tabs */
     padding: 0; /* Remove padding */
-    height: 70vh; /* Adjust height to match the hero section */
+    height: fit-content; /* Adjust height to match the hero section */
   }
   
   .tab {
-    background-color: #8b8787; /* Light gray background */
+    background-color: #808080b2; /* Light gray background */
     padding: 40px; /* Larger padding for larger tabs */
     text-align: center;
     border-radius: 0px; /* Remove rounded corners */
@@ -91,7 +91,7 @@
     margin-left: -4px;
     font-size: 1.5rem;
     font-weight: 600;
-    color: rgb(74, 71, 62);
+    color: rgb(255, 255, 255);
 }
 
 .img {
@@ -125,7 +125,7 @@
     width: 100%;
     height: auto;
     max-width: 1700px;
-    margin: auto;
+    margin-top: 40px;
     display: flex;
     -webkit-box-align: center;
     justify-content: center;
@@ -135,7 +135,9 @@
 }
 .herocontent {
     width: 70%;
-    background-color: #80808080; /* Gray with 50% opacity */
+    height: fit-content;
+    margin-top: 1.4%;
+    background-color: #808080b2; /* Gray with 50% opacity */
     padding: 20px; /* Adds space around the text */
     border-radius: 10px; /* Optional: adds rounded corners */
 }
@@ -171,10 +173,10 @@
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    line-height: 2rem;
+    line-height: 2.1rem;
     font-size: 1.4rem;
     font-weight: bold;
-    color: #000000;
+    color: #ffffff;
 }
 
 

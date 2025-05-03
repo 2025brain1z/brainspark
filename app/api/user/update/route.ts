@@ -39,6 +39,7 @@ export async function PUT(req: NextRequest) {
 
         existingBadge.description = `${count}x ${medal}`;
         existingBadge.icon = medalIcon;
+        existingBadge.earnedAt = new Date();
       } else {
         // Assign correct medal icon
         user.badges.push({
@@ -48,6 +49,7 @@ export async function PUT(req: NextRequest) {
           icon: medalIcon,
           earnedAt: new Date(),
         });
+        console.log('Updated badges array:', user.badges);
       }
     }
 
