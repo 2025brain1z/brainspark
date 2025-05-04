@@ -1,28 +1,28 @@
 export const questions = [
   {
-    question: "The ethical imperative for fairness in marketing primarily stems from the necessity for:",
+    question: "The need for fairness in marketing arises from the need for:",
     options: [
       "transactions to be beneficial to everyone",
-      "transactions to avoid causing harm to anyone",
-      "information to be accessible without cost to everyone",
-      "consumers to obtain their desired products"
+      "transactions to not harm anyone",
+      "information to be freely available to anyone",
+      "consumers to get what they want"
     ],
-    correctOption: "transactions to not harm anyone",
+    correctOption: "transactions to be beneficial to everyone",
     difficulty: "beginner"
   },
   {
-    question: "Which of the following descriptions poorly characterizes effective social advertisement?",
+    question: "Identify a poor description of effective social advertisement.",
     options: [
-      "Creators of social advertisements should aim for outcomes that align with the overall message.",
-      "Social advertisement topics typically address issues of broad public concern.",
-      "Creators of social advertisements understand their limitations, as some social problems may require political solutions.",
-      "Social advertisement must manipulate individuals to achieve engagement."
+      "Creators of social advertisement must aim for outcomes that are aligned with the overall advertisement message.",
+      "Social advertisement topics are those of importance to the public at large.",
+      "Creators of social advertisement realize the limits of social advertisement because social problems sometimes require a political remedy.",
+      "Social advertisement must manipulate individuals to engage them."
     ],
     correctOption: "Social advertisement must manipulate individuals to engage them.",
     difficulty: "beginner"
   },
   {
-    question: "The ethical marketing principle of _________ is fundamentally supported by truthful labeling.",
+    question: "Truthful labeling is essential to the ethical marketing concept of:",
     options: [
       "well-being",
       "fairness",
@@ -33,29 +33,29 @@ export const questions = [
     difficulty: "beginner"
   },
   {
-    question: "To ensure that _________, pricing in the market must remain competitive.",
+    question: "Pricing has to remain competitive so that:",
     options: [
       "companies can maximize their profits",
-      "workers receive equitable wages",
-      "consumers have the liberty to choose the most suitable exchange",
-      "consumers receive products of the highest possible quality"
+      "workers get paid fair wages",
+      "consumers are free to choose the best exchange",
+      "consumers get as high-quality products as possible"
     ],
     correctOption: "consumers are free to choose the best exchange",
     difficulty: "beginner"
   },
   {
-    question: "Full-line forcing by a manufacturer to a retailer raises ethical concerns primarily because:",
+    question: "Full-line forcing by a manufacturer to a retailer is ethically questionable because:",
     options: [
-      "it leads to increased prices",
-      "it restricts the choices available to consumers",
-      "it fosters consumer dependence on a single brand",
-      "it prevents consumers from accessing sufficient information"
+      "it drives prices higher",
+      "it limits consumer choice",
+      "it makes consumers dependent on one brand",
+      "it prevents consumers from obtaining adequate information"
     ],
     correctOption: "it limits consumer choice",
     difficulty: "beginner"
   },
   {
-    question: "Advertising is generally considered unethical if it is:",
+    question: "Advertising is considered to be unethical if it is:",
     options: [
       "untruthful",
       "expensive",
@@ -66,139 +66,139 @@ export const questions = [
     difficulty: "beginner"
   },
   {
-    question: "What criterion is used to determine if an advertisement generates a false belief?",
+    question: "By what measure is it determined whether an ad causes a false belief?",
     options: [
-      "if it deceives a consumer lacking knowledge",
-      "if it significantly impacts a purchasing decision",
-      "whether it includes any factually incorrect information",
-      "whether it promotes a product a reasonable person would desire"
+      "if it deceives an ignorant consumer",
+      "if it substantially interferes with a decision to buy",
+      "whether it contains any factually incorrect information",
+      "whether it is a product a reasonable person would want to buy"
     ],
     correctOption: "if it substantially interferes with a decision to buy",
     difficulty: "beginner"
   },
   {
-    question: "The dependence effect poses an ethical risk mainly because:",
+    question: "The dependence effect is an ethical danger zone because:",
     options: [
-      "prices may become artificially inflated",
-      "consumer desires are shaped by producers rather than originating from consumers themselves",
-      "there is insufficient competition among producers",
-      "products might be marketed to inappropriate demographics"
+      "prices may end up artificially high",
+      "wants are created by the producer instead of the consumer",
+      "there is insufficient competition between producers",
+      "products may end up being marketed to the wrong people"
     ],
     correctOption: "wants are created by the producer instead of the consumer",
     difficulty: "beginner"
   },
   {
-    question: "A significant argument supporting advertising is that it:",
+    question: "A strong argument in defense of advertisement is that it:",
     options: [
-      "does not negatively influence cognitive development",
-      "has minimal impact on children’s emotional development",
-      "is not the sole driver of marketing orientation",
-      "does not contribute to negative self-image"
+      "does not negatively affect cognitive development",
+      "has little impact on children's emotional development",
+      "is not solely responsible for marketing orientation",
+      "does not create negative self-image"
     ],
     correctOption: "is not solely responsible for marketing orientation",
     difficulty: "beginner"
   },
   {
-    question: "A key ethical challenge for Internet consumers is the inability to:",
+    question: "A significant ethical issue facing Internet consumers is the inability to:",
     options: [
-      "sell personal advertisements",
-      "monitor the personal information of other consumers",
-      "establish online accounts",
-      "understand how their personal data is collected and utilized"
+      "sell personal ads",
+      "track other consumers' information",
+      "create online accounts",
+      "identify how personal data are collected and used"
     ],
     correctOption: "identify how personal data are collected and used",
     difficulty: "beginner"
   },
   {
-    question: "What does the P&G case illustrate regarding the relevance of ethics to business practices?",
+    question: "What does the P&G case show about the applicability of ethics to business?",
     options: [
-      "Unethical decisions by companies typically involve legal violations.",
-      "Ethical principles are applied differently in a business context compared to other areas of life.",
-      "A company's actions can be considered unethical even in the absence of direct harm.",
-      "A company’s ethical choices should consistently influence its financial performance."
+      "When a company makes unethical decisions, it is usually breaking the law.",
+      "Ethics in business applies differently from how it does in the rest of the world.",
+      "A company's behavior many be unethical even if no harm is done.",
+      "A company's ethical decisions should always affect its bottom line."
     ],
-    correctOption: "A company’s behavior many be unethical even if no harm is done.",
+    correctOption: "A company's behavior many be unethical even if no harm is done.",
     difficulty: "beginner"
   },
   {
-    question: "Teleological ethical theories primarily locate moral goodness in:",
+    question: "Teleological theories of ethics locate goodness in:",
     options: [
-      "the consequences of actions",
-      "the intentions of the individual performing the action",
-      "the duties and obligations individuals have towards each other",
-      "the maximization of economic opportunities"
+      "the outcome of actions",
+      "the intentions of the agent",
+      "the obligations of people to each other",
+      "the maximization of economic opportunity"
     ],
     correctOption: "the outcome of actions",
     difficulty: "beginner"
   },
   {
-    question: "Rule utilitarianism advocates for rules that:",
+    question: "Rule utilitarianism favors rules that:",
     options: [
-      "invariably benefit the majority of people",
-      "are universally agreed upon",
-      "utilitarians deem to be good rules",
-      "would maximize overall well-being if universally followed"
+      "always benefit the most people",
+      "everyone agrees with",
+      "utilitarians think are good rules",
+      "would maximize goodness if everyone followed them"
     ],
     correctOption: "would maximize goodness if everyone followed them",
     difficulty: "beginner"
   },
   {
-    question: "What is the most significant fundamental limitation of using cost-benefit analyses as the primary basis for ethical decision-making in business?",
+    question: "What is the most fundamental drawback of having cost-benefit analyses serve as the basis for ethical decisions in business?",
     options: [
-      "Certain values are inherently immeasurable.",
-      "It necessitates assigning definite values to things that possess incalculable worth.",
-      "Cost-benefit analyses are time-intensive and require specialized expertise.",
-      "Cost-benefit analyses inherently require a commitment to consequentialism."
+      "Some things do not really have value.",
+      "A determinate value must be placed on things that have incalculable value.",
+      "Cost-benefit analyses are time-consuming and require specialized skill.",
+      "Cost-benefit analyses require a commitment to consequentialism."
     ],
     correctOption: "A determinate value must be placed on things that have incalculable value.",
     difficulty: "beginner"
   },
   {
-    question: "According to Kant's terminology, a “maxim” is:",
+    question: "A \"maxim,\" according to Kant's terminology, is:",
     options: [
-      "the result of an action",
-      "the underlying reason for undertaking an action",
-      "the moral principle guiding an action",
-      "the element that renders an action morally right"
+      "the outcome of an action",
+      "the reason that one undertakes an action",
+      "the moral principle that one has in mind",
+      "that which would make an action moral"
     ],
     correctOption: "the moral principle that one has in mind",
     difficulty: "beginner"
   },
   {
-    question: "Kant’s principle of respect for persons requires that we:",
+    question: "Kant's rule requiring respect for persons asks that we:",
     options: [
-      "avoid using individuals solely as means to achieve our goals",
-      "recognize each person as a moral agent capable of making their own decisions",
-      "consider each person as an ultimate end in themselves",
-      "only utilize another person if we have a sufficiently justifiable reason"
+      "not use people as means to an end",
+      "view each person as a moral agent",
+      "view each person as an end unto himself",
+      "only use another person if we have sufficient reason for doing so"
     ],
-    correctOption: "not use people as means to an end",
+    correctOption: "view each person as an end unto himself",
     difficulty: "beginner"
   },
   {
-    question: "Virtue ethics defines a morally correct action as one that:",
+    question: "Virtue ethics defines a moral action as that which:",
     options: [
-      "a person of wisdom would perform",
-      "results in the greatest overall virtue",
-      "is carried out with the most virtuous intentions",
-      "adheres to the appropriate set of rules"
+      "a wise person would do",
+      "leads to the most virtue overall",
+      "is done with the most virtuous intentions",
+      "is done according to the proper rules"
     ],
     correctOption: "a wise person would do",
     difficulty: "beginner"
   },
   {
-    question: "A limitation of using rights as the foundation for business ethics theorizing is that:",
+    question: "A drawback to theorizing about business ethics in terms of rights is that:",
     options: [
-      "not all individuals possess rights",
-      "conflicts can arise between different individuals' rights",
-      "it is challenging to clearly distinguish between various categories of rights",
-      "the understanding of rights varies across different cultures"
+      "not everyone has rights",
+      "people's rights may conflict",
+      "it is hard to draw the line between different types of rights",
+      "conceptions of rights differ between cultures"
     ],
-    correctOption: "people’s rights may conflict",
+    correctOption: "people's rights may conflict",
     difficulty: "beginner"
   },
   {
-    question: "The concept of justice is most fundamentally concerned with:",
+    question: "The notion of justice is most basically concerned with:",
     options: [
       "fairness",
       "equality",
@@ -209,18 +209,18 @@ export const questions = [
     difficulty: "beginner"
   },
   {
-    question: "In numerous instances, the principles of business ethics can be derived from:",
+    question: "In many cases, rules of business ethics can be determined by:",
     options: [
-      "applicable legal statutes",
-      "company-specific guidelines",
-      "prevailing economic demands",
-      "general rules of conduct applicable in everyday life"
+      "applicable laws",
+      "company guidelines",
+      "economic requirements",
+      "rules of conduct that apply in everyday life"
     ],
     correctOption: "rules of conduct that apply in everyday life",
     difficulty: "beginner"
   },
   {
-    question: "The economic nature of business is evident in its:",
+    question: "The economic character of business can be seen in its:",
     options: [
       "trading characteristics",
       "ethical dimensions",
@@ -231,7 +231,7 @@ export const questions = [
     difficulty: "beginner"
   },
   {
-    question: "Organization within a business is primarily characterized by its:",
+    question: "Organization in business is characterized mainly by its:",
     options: [
       "rules",
       "hierarchy",
@@ -242,7 +242,7 @@ export const questions = [
     difficulty: "beginner"
   },
   {
-    question: "Decision-making in business occurs at various distinct:",
+    question: "Decision making in business occurs at various distinctive:",
     options: [
       "places",
       "levels",
@@ -253,166 +253,166 @@ export const questions = [
     difficulty: "beginner"
   },
   {
-    question: "If a business manager proceeds with a course of action despite having information suggesting the need for reconsideration, this decision is likely influenced by:",
+    question: "If a business manager decides to proceed with a course of action although the manager has information that suggests the need to rethink the decision, the manager is being influenced by:",
     options: [
       "anchor heuristic",
       "confirmation bias",
       "sunk cost bias",
       "adjustment heuristic"
     ],
-    correctOption: "confirmation bias",
+    correctOption: "sunk cost bias",
     difficulty: "beginner"
   },
   {
-    question: "Economic reasoning describes the process by which we:",
+    question: "Economic reasoning describes how we:",
     options: [
       "ought to reason",
       "prioritize our desires",
       "reason when pursuing our goals",
-      "would reason if we could have unlimited resources"
+      "would reason if we could have whatever we wanted"
     ],
     correctOption: "reason when pursuing our goals",
     difficulty: "beginner"
   },
   {
-    question: "Adam Smith's economic theory is primarily based on which of the following assumptions?",
+    question: "Adam Smith's economic theory is based on which of the following assumptions?",
     options: [
-      "Individuals inherently seek to promote the interests of others.",
-      "Moral considerations are irrelevant to economic matters.",
-      "Free markets possess the inherent ability to resolve their own ethical dilemmas.",
-      "Individuals will behave rationally in the pursuit of their self-interest."
+      "People want to promote each others' interests.",
+      "Morality is not relevant to economic concerns.",
+      "Free markets will fix their own ethical problems.",
+      "People will behave rationally as they pursue their interests."
     ],
     correctOption: "People will behave rationally as they pursue their interests.",
     difficulty: "beginner"
   },
   {
-    question: "What key insight does the ultimatum bargaining game typically demonstrate?",
+    question: "What fact does the \"ultimatum bargaining game\" demonstrate?",
     options: [
-      "It is often economically sound to price products below their market value.",
-      "Free markets generally exhibit self-regulatory behavior.",
-      "A significant portion of the population lacks understanding of economic principles.",
-      "Many individuals would prefer to forgo a transaction rather than be treated unfairly."
+      "It is often rational to price products below their market value.",
+      "Free markets will usually self-regulate.",
+      "Many people do not understand economics.",
+      "Many people would rather not trade than be treated unfairly."
     ],
     correctOption: "Many people would rather not trade than be treated unfairly.",
     difficulty: "beginner"
   },
   {
-    question: "The argument that law and ethics govern distinct and separate domains is flawed because:",
+    question: "The school of thought that says that law and ethics govern two different realms is wrong because:",
     options: [
-      "ethical principles are applicable to all aspects of life",
-      "any action that is legally permissible is also inherently ethical",
-      "any action that is legally prohibited is also inherently unethical",
-      "the legal framework governs every facet of human existence"
+      "ethics applies to every field of life",
+      "anything that is legal is also ethical",
+      "anything that is illegal is also unethical",
+      "the law governs every aspect of life"
     ],
     correctOption: "ethics applies to every field of life",
     difficulty: "beginner"
   },
   {
-    question: "Merely adhering to the law is ethically insufficient because:",
+    question: "It is not ethically sufficient to obey the law because:",
     options: [
-      "the law does not generally apply to business operations",
-      "ethical obligations sometimes necessitate disregarding legal requirements",
-      "ethical considerations extend beyond what can be formally codified in law",
-      "the legal framework is inherently more stringent than ethical principles"
+      "the law does not apply to business in general",
+      "ethical constraints sometimes require that the law be ignored",
+      "ethics goes beyond what can be legally codified",
+      "the law itself is stricter than ethics"
     ],
     correctOption: "ethics goes beyond what can be legally codified",
     difficulty: "beginner"
   },
   {
-    question: "A market economy is fundamentally based on:",
+    question: "A market economy is based fundamentally on:",
     options: [
       "ethical motivations",
-      "the pursuit of profit",
-      "the promotion of human welfare",
-      "manufacturing processes"
+      "the profit motive",
+      "human welfare",
+      "manufacturing"
     ],
     correctOption: "the profit motive",
     difficulty: "beginner"
   },
   {
-    question: "A market characterized by perfect competition would necessitate:",
+    question: "A market with perfect competition would require:",
     options: [
-      "agents acting irrationally",
-      "the absence of contractual agreements",
-      "the irrelevance of ethical considerations",
-      "the legal codification of ethical guidelines"
+      "agents to not be rational",
+      "that there be no contracts",
+      "that ethics not be necessary",
+      "ethical guidelines to be legally codified"
     ],
     correctOption: "that ethics not be necessary",
     difficulty: "beginner"
   },
   {
-    question: "Fraudulent activities are unethical primarily because:",
+    question: "Fraud is unethical because:",
     options: [
-      "all involved parties must have access to relevant information",
-      "no individual should be allowed to accumulate excessive profits",
-      "market economies depend on the freedom of action of participants",
-      "the market requires every participant to advance their own interests"
+      "all parties must have access to pertinent information",
+      "no one may be permitted to profit too much",
+      "market economies require freedom of action",
+      "the market requires everyone to further their own interests"
     ],
     correctOption: "all parties must have access to pertinent information",
     difficulty: "beginner"
   },
   {
-    question: "The key distinction between Homo economicus and actual human beings is that:",
+    question: "The difference between Homo economicus and actual people is that:",
     options: [
-      "Homo economicus possesses the ability to make any conceivable decision",
-      "Homo economicus pursues a wide array of diverse interests",
-      "actual people are motivated by their own self-interest",
-      "actual people exhibit less than perfect rationality in their decision-making"
+      "Homo economicus is capable of making any decision",
+      "Homo economicus pursues many different interests",
+      "actual people pursue their own self-interest",
+      "actual people are less than perfectly rational"
     ],
     correctOption: "actual people are less than perfectly rational",
     difficulty: "beginner"
   },
   {
-    question: "A market economy alone is inadequate for sustaining public goods primarily because:",
+    question: "A market economy alone cannot sustain public goods because:",
     options: [
-      "no one would have a desire to utilize public goods",
-      "individuals would act as free riders if given the opportunity",
-      "people would attempt to privately trade public goods among themselves",
-      "participants in a market economy exhibit imperfectly rational behavior"
+      "no one would want to take advantage of public goods",
+      "people would be free riders if they could be",
+      "people would try to sell each other public goods",
+      "participants in a market economy are imperfectly rational"
     ],
     correctOption: "people would be free riders if they could be",
     difficulty: "beginner"
   },
   {
-    question: "Unequal outcomes in market economies primarily arise due to:",
+    question: "Market outcomes lead to unequal outcomes mainly because:",
     options: [
-      "the involvement of random processes",
-      "varying levels of skill among participants",
-      "the inherent injustice of free markets",
-      "governmental intervention in the market"
+      "it involves random processes",
+      "participants have differing levels of skill",
+      "free markets are inherently unjust",
+      "there is government interference"
     ],
     correctOption: "participants have differing levels of skill",
     difficulty: "beginner"
   },
   {
-    question: "A fiduciary holds a specific responsibility to:",
+    question: "A fiduciary has the special responsibility to:",
     options: [
-      "safeguard another's financial interests",
-      "sell goods with maximum efficiency",
-      "provide the most comprehensive information possible",
+      "care for another's financial interests",
+      "sell goods as efficiently as possible",
+      "provide as much information as possible",
       "take a professional interest in another's success"
     ],
-    correctOption: "care for another’s financial interests",
+    correctOption: "care for another's financial interests",
     difficulty: "beginner"
   },
   {
-    question: "Professions maintain a societal contract where they _____ in exchange for the numerous advantages derived from their specialized knowledge.",
+    question: "Professions have a contract with society whereby they _____ in exchange for sharing the many benefits of their specialized knowledge.",
     options: [
-      "submit to comprehensive government regulation",
-      "cede control over the execution of their work",
-      "forego the necessity of licensing requirements",
-      "are granted the privilege of self-regulation"
+      "submit to total government regulation",
+      "relinquish control over their work",
+      "forgo licensing requirements",
+      "are granted self-regulation"
     ],
     correctOption: "are granted self-regulation",
     difficulty: "beginner"
   },
   {
-    question: "From a traditional economic standpoint, a firm was viewed as _____ with the primary objective of maximizing its profits.",
+    question: "From a traditional economic point of view, a firm was viewed as _____ which sought to maximize its profits.",
     options: [
-      "a synthesis of markets and interpersonal relationships",
-      "a framework of relationships, roles, and markets",
-      "a moral agent possessing ethical responsibilities",
-      "a market actor operating within economic principles"
+      "a combination of markets and relationships",
+      "a series of relationships, roles, and markets",
+      "a moral actor",
+      "a market actor"
     ],
     correctOption: "a market actor",
     difficulty: "beginner"
@@ -420,21 +420,21 @@ export const questions = [
   {
     question: "The ethical concept of dignity most centrally involves:",
     options: [
-      "treating all individuals in an identical manner",
-      "disclosing all information deemed necessary by others",
-      "acknowledging the inherent worth of individuals or other entities",
-      "acting in accordance with elevated standards of virtue"
+      "treating all persons equally",
+      "disclosing all information that is needed by others",
+      "recognizing the intrinsic value of persons or other entities",
+      "behaving with high standards of virtue"
     ],
     correctOption: "recognizing the intrinsic value of persons or other entities",
     difficulty: "beginner"
   },
   {
-    question: "A whistle-blower is primarily driven by:",
+    question: "A whistle-blower is primarily motivated by:",
     options: [
-      "retaliation against an employer",
-      "ethical concern for wrongdoing",
-      "the pursuit of personal gain",
-      "fear of potential repercussions"
+      "retaliation",
+      "ethical concern",
+      "personal gain",
+      "fear of retribution"
     ],
     correctOption: "ethical concern",
     difficulty: "beginner"
@@ -447,7 +447,7 @@ export const questions = [
       "to report on employee conduct",
       "to address and investigate employee complaints"
     ],
-    correctOption: "to hear complaints",
+    correctOption: "to address and investigate employee complaints",
     difficulty: "intermediate"
   },
   {
@@ -458,7 +458,7 @@ export const questions = [
       "The agent is not an employee of the principal.",
       "The agent is contractually bound to fulfill their duties."
     ],
-    correctOption: "The argument is supported because the agent is contractually obligated to perform his or her duty.",
+    correctOption: "The agent is contractually bound to fulfill their duties.",
     difficulty: "intermediate"
   },
   {
@@ -469,7 +469,7 @@ export const questions = [
       "They did not adequately document the problems associated with the O-ring.",
       "They chose to contact the press before communicating their concerns to their superiors."
     ],
-    correctOption: "They tried to resolve the matter internally at Morton Thiokol",
+    correctOption: "They attempted to resolve the issue solely within Morton Thiokol.",
     difficulty: "intermediate"
   },
   {
@@ -480,7 +480,7 @@ export const questions = [
       "when the whistleblower seeks to initiate change within the corporation",
       "when the government compensates the employee for the information"
     ],
-    correctOption: "when the whistleblower wants to see change in the corporation",
+    correctOption: "when the whistleblower seeks to initiate change within the corporation",
     difficulty: "intermediate"
   },
   {
@@ -491,7 +491,7 @@ export const questions = [
       "publicly disclose their grievances",
       "hope that the company will internally reform its practices"
     ],
-    correctOption: "simply leave the company",
+    correctOption: "simply terminate their employment",
     difficulty: "intermediate"
   },
   {
@@ -502,7 +502,7 @@ export const questions = [
       "whistleblowers provide a benefit to society as a whole",
       "whistleblowers should have absolute freedom of speech"
     ],
-    correctOption: "whistleblowers benefit society",
+    correctOption: "whistleblowers provide a benefit to society as a whole",
     difficulty: "intermediate"
   },
   {
@@ -513,7 +513,7 @@ export const questions = [
       "it increases overall employee satisfaction",
       "wrongdoing can inflict significant harm on the company"
     ],
-    correctOption: "wrongdoing harms them",
+    correctOption: "wrongdoing can inflict significant harm on the company",
     difficulty: "intermediate"
   },
   {
@@ -524,7 +524,7 @@ export const questions = [
       "a mechanism for employees to publicly disclose information",
       "specific provisions for monetary compensation"
     ],
-    correctOption: "a guarantee against retaliation",
+    correctOption: "a guarantee against any form of retaliation",
     difficulty: "intermediate"
   },
   {
@@ -535,7 +535,7 @@ export const questions = [
       "the reasons why companies seek to protect their trade secrets",
       "the degree to which trade secrets have been actively pursued"
     ],
-    correctOption: "what constitutes a trade secret",
+    correctOption: "the precise definition of what constitutes a trade secret",
     difficulty: "intermediate"
   },
   {
@@ -546,7 +546,7 @@ export const questions = [
       "effectively preventing domestic spying",
       "being the first U.S. law to specifically protect trade secrets"
     ],
-    correctOption: "was the first law in the U.S. to protect trade secrets",
+    correctOption: "being the first U.S. law to specifically protect trade secrets",
     difficulty: "intermediate"
   },
   {
@@ -557,7 +557,7 @@ export const questions = [
       "when the intellectual property is unrelated to work performed for the employer",
       "when the inventor holds the rights to numerous different patents"
     ],
-    correctOption: "when an inventor works for a company that manufactures the invention",
+    correctOption: "when an inventor is employed by a company that manufactures the invention",
     difficulty: "intermediate"
   },
   {
@@ -568,7 +568,7 @@ export const questions = [
       "The formulas created by Greenberg were not owned by any party.",
       "Preventing him from using the formulas would unfairly limit his ability to compete with his new employer."
     ],
-    correctOption: "not allowing him to do so would unfairly restrict his ability to compete with the new company",
+    correctOption: "Preventing him from using the formulas would unfairly limit his ability to compete with his new employer.",
     difficulty: "intermediate"
   },
   {
@@ -579,7 +579,7 @@ export const questions = [
       "Property should be collectively owned by all members of society.",
       "Companies should be entitled to pursue profits by any means available."
     ],
-    correctOption: "each person owns the product of his/her labor",
+    correctOption: "Individuals have ownership over the products of their labor.",
     difficulty: "intermediate"
   },
   {
@@ -590,7 +590,7 @@ export const questions = [
       "They are inherently difficult to enforce effectively.",
       "They can create significant obstacles for employees in securing subsequent suitable employment."
     ],
-    correctOption: "They can result in difficulty for an employee to subsequently find suitable work.",
+    correctOption: "They can create significant obstacles for employees in securing subsequent suitable employment.",
     difficulty: "intermediate"
   },
   {
@@ -601,7 +601,7 @@ export const questions = [
       "The employer operates within a highly technological industry.",
       "The employee will eventually be employed by a competitor."
     ],
-    correctOption: "the employee will eventually work for a competitor",
+    correctOption: "The employee will eventually be employed by a competitor.",
     difficulty: "intermediate"
   },
   {
@@ -623,7 +623,7 @@ export const questions = [
       "They create incentives for company representatives to act against the best interests of others.",
       "They hinder a company's potential for optimal success."
     ],
-    correctOption: "create incentive for company representatives to act against others’ best interest",
+    correctOption: "They create incentives for company representatives to act against the best interests of others.",
     difficulty: "intermediate"
   },
   {
@@ -634,7 +634,7 @@ export const questions = [
       "Arthur Andersen had a vested interest in avoiding criticisms that could negatively impact its consulting relationship with Enron.",
       "Arthur Andersen lacked sufficient familiarity with Enron to effectively serve as both consultant and auditor."
     ],
-    correctOption: "Arthur Andersen had incentive not to make criticisms that would hurt its consulting role",
+    correctOption: "Arthur Andersen had a vested interest in avoiding criticisms that could negatively impact its consulting relationship with Enron.",
     difficulty: "intermediate"
   },
   {
@@ -645,7 +645,7 @@ export const questions = [
       "An employer has the right to terminate an employee at any time.",
       "A worker possesses ownership rights over the products of their labor."
     ],
-    correctOption: "an employer can release an employee at any time",
+    correctOption: "An employer has the right to terminate an employee at any time.",
     difficulty: "intermediate"
   },
   {
@@ -656,7 +656,7 @@ export const questions = [
       "An employer has ownership rights over their employees’ labor.",
       "An employer has the right to regulate how its employees utilize their time."
     ],
-    correctOption: "a worker has the rights to his/her labor",
+    correctOption: "A worker is entitled to the products of their labor.",
     difficulty: "intermediate"
   },
   {
@@ -667,7 +667,7 @@ export const questions = [
       "Both employers and employees derive benefits from this arrangement.",
       "Employees possess the right to freedom of expression in the workplace."
     ],
-    correctOption: "employers and employees both benefit from it",
+    correctOption: "Both employers and employees derive benefits from this arrangement.",
     difficulty: "intermediate"
   },
   {
@@ -678,7 +678,7 @@ export const questions = [
       "Property rights are the most fundamental and should be prioritized.",
       "Due process necessitates the existence of a formal written contract of employment."
     ],
-    correctOption: "employment at will can be arbitrary",
+    correctOption: "Employment at will can be inherently arbitrary and unfair.",
     difficulty: "intermediate"
   },
   {
@@ -689,7 +689,7 @@ export const questions = [
       "They are concerned about the potential judgment of their colleagues.",
       "They fear the possibility of losing their employment."
     ],
-    correctOption: "they are afraid of losing their jobs",
+    correctOption: "They fear the possibility of losing their employment.",
     difficulty: "intermediate"
   },
   {
@@ -700,7 +700,7 @@ export const questions = [
       "They have greater free speech rights compared to employees in the private sector.",
       "They have different free speech rights from other employees"
     ],
-    correctOption: "have different free speech rights from other employees",
+    correctOption: "They have different free speech rights from other employees",
     difficulty: "intermediate"
   },
   {
@@ -711,7 +711,7 @@ export const questions = [
       "Companies are organized without any hierarchical structures or management levels.",
       "Companies are not led or governed by a single individual in a position of authority."
     ],
-    correctOption: "workers are represented in company decisions",
+    correctOption: "Workers have representation and a voice in company decision-making processes.",
     difficulty: "intermediate"
   },
   {
@@ -722,7 +722,7 @@ export const questions = [
       "improved personal health and well-being",
       "the legitimization of power and authority structures"
     ],
-    correctOption: "legitimizing power",
+    correctOption: "the legitimization of power and authority structures",
     difficulty: "intermediate"
   },
   {
@@ -733,7 +733,7 @@ export const questions = [
       "It functions as a mechanism for income redistribution, primarily benefiting the middle class.",
       "It is the most efficient method for increasing income levels among low-wage workers."
     ],
-    correctOption: "it helps to prevent worker exploitation",
+    correctOption: "It serves as a deterrent against the exploitation of workers.",
     difficulty: "intermediate"
   },
   {
@@ -744,7 +744,7 @@ export const questions = [
       "Employers have the financial capacity to offer the same jobs at higher rates of pay.",
       "Workers are unwilling to accept just any job that is available to them, regardless of the wage."
     ],
-    correctOption: "employers could offer the same jobs at higher wages",
+    correctOption: "Employers have the financial capacity to offer the same jobs at higher rates of pay.",
     difficulty: "intermediate"
   },
   {
@@ -755,7 +755,7 @@ export const questions = [
       "It has faced increasing criticism and skepticism.",
       "It has gained broader acceptance and recognition."
     ],
-    correctOption: "gaining increased acceptance",
+    correctOption: "It has gained broader acceptance and recognition.",
     difficulty: "intermediate"
   },
   {
@@ -766,7 +766,7 @@ export const questions = [
       "He believed it is acceptable only if implemented and regulated by the government.",
       "He predicted that it would be a short-lived trend."
     ],
-    correctOption: "fails to serve the interests of company’s stockholders",
+    correctOption: "He contended that it does not serve the best interests of a company’s stockholders.",
     difficulty: "intermediate"
   },
   {
@@ -777,7 +777,7 @@ export const questions = [
       "They invariably and directly contribute to the company's profitability.",
       "They are synonymous with the company's economic responsibilities."
     ],
-    correctOption: "bring it in line with social norms",
+    correctOption: "They align the company's behavior with prevailing social norms.",
     difficulty: "intermediate"
   },
   {
@@ -788,7 +788,7 @@ export const questions = [
       "enhancing the overall quality of life for employees",
       "adhering to legally mandated minimum-wage laws"
     ],
-    correctOption: "improving employees’ quality of life",
+    correctOption: "enhancing the overall quality of life for employees",
     difficulty: "intermediate"
   },
   {
@@ -799,7 +799,7 @@ export const questions = [
       "the specific products that a company manufactures",
       "a company’s direct involvement in governmental affairs"
     ],
-    correctOption: "a company’s awareness of its broader social context",
+    correctOption: "a company’s understanding and awareness of its broader social context",
     difficulty: "intermediate"
   },
   {
@@ -810,7 +810,7 @@ export const questions = [
       "maintain strict company control over the data and its dissemination",
       "selectively release the data to specific stakeholders"
     ],
-    correctOption: "interpreted using well-respected guidelines",
+    correctOption: "ensure that the data are interpreted using widely respected and accepted guidelines",
     difficulty: "intermediate"
   },
   {
@@ -821,7 +821,7 @@ export const questions = [
       "are not fundamentally different from other types of organizations or entities",
       "exist primarily for purposes other than the promotion of social responsibility"
     ],
-    correctOption: "exist for reasons other than promoting social responsibility",
+    correctOption: "exist primarily for purposes other than the promotion of social responsibility",
     difficulty: "intermediate"
   },
   {
@@ -832,7 +832,7 @@ export const questions = [
       "as long as they ultimately serve to further a company’s own self-interest",
       "as long as they do not violate any existing laws or regulations"
     ],
-    correctOption: "further a company’s self-interest",
+    correctOption: "as long as they ultimately serve to further a company’s own self-interest",
     difficulty: "intermediate"
   },
   {
@@ -843,7 +843,7 @@ export const questions = [
       "a tax on the company's shareholders",
       "a tax on the company's board of directors"
     ],
-    correctOption: "the shareholders",
+    correctOption: "a tax on the company's shareholders",
     difficulty: "intermediate"
   },
   {
@@ -854,7 +854,7 @@ export const questions = [
       "when their CSR programs are implemented as frugally and cost-effectively as possible",
       "when their CSR activities involve the participation of as many employees as possible"
     ],
-    correctOption: "are integrated into a corporate strategy",
+    correctOption: "when their CSR initiatives are deeply integrated into their overall corporate strategy",
     difficulty: "intermediate"
   },
   {
@@ -865,7 +865,7 @@ export const questions = [
       "the presence of a signed non-disclosure agreement",
       "the exercise of managerial authority"
     ],
-    correctOption: "information",
+    correctOption: "the possession of information concerning wrongdoing",
     difficulty: "intermediate"
   },
   {
