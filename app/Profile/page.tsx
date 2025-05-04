@@ -39,6 +39,7 @@ const Profile: React.FC = () => {
   const { user } = useUser();
   const [profileData, setProfileData] = useState<ProfileData | null>(null);
   const [leaderboard, setLeaderboard] = useState<LeaderboardEntry[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     if (!user) return;
@@ -75,9 +76,21 @@ const Profile: React.FC = () => {
   }, [user]);
 
   if (!user || !profileData) {
-    return <p>Loading...</p>;
+    return (
+      <div className={styles.loadingContainer}>
+        <Image
+          src="/loading.gif"
+          alt="Loading..."
+          className={styles.loadingAnimation}
+          width={150}
+          height={150}
+          priority
+        />
+      </div>
+    );
   }
 
+  // Safely access user and profileData properties
   return (
     <div className="max-w-4xl mx-auto p-6 pt-24">
       {/* Navbar */}
@@ -93,27 +106,25 @@ const Profile: React.FC = () => {
           <Link href="/Profile" className={styles.navlist}>Profile</Link>
           <Link href="/Contact" className={styles.navlist}>Feedback</Link>
 
-          {/* Conditionally render the Sign In link based on user authentication */}
           {!user && (
             <Link href="/SignIn" className={styles.navlist}>
               Sign In
             </Link>
           )}
 
-          {/* UserButton to show logged-in user's info */}
-        <UserButton />
+          <UserButton />
         </div>
       </div>
 
       {/* Profile Section */}
       <div className="text-center mb-6 mt-6">
-        <h1 className="text-3xl font-bold">{user.fullName}&apos;s Profile</h1>
+        <h1 className="text-3xl font-bold">{user?.fullName || "Guest"}&apos;s Profile</h1>
         <p className="text-gray-500">Track your progress and achievements</p>
       </div>
 
       {/* Daily Streak */}
       <div className="bg-yellow-100 p-4 rounded-lg mb-4 text-center">
-        <h2 className="text-xl font-semibold">🔥 Daily Streak: {profileData.streak || 0} Days</h2>
+        <h2 className="text-xl font-semibold">🔥 Daily Streak: {profileData?.streak || 0} Days</h2>
         <p className="text-gray-600">Keep going! Complete a challenge every day.</p>
       </div>
 
@@ -121,7 +132,7 @@ const Profile: React.FC = () => {
       <div className="mb-4">
         <h2 className="text-xl font-semibold mb-2">🏆 Achievements</h2>
 
-        {profileData.achievements && profileData.achievements.length > 0 ? (
+        {profileData?.achievements && profileData.achievements.length > 0 ? (
           <div className="grid grid-cols-2 gap-4">
             {profileData.achievements.map((ach: Achievement, index: number) => (
               <div key={ach.id || index} className="bg-gray-100 p-3 rounded-lg shadow-md flex items-center">
@@ -134,15 +145,14 @@ const Profile: React.FC = () => {
             ))}
           </div>
         ) : (
-          <p className="text-gray-500">No achievements yet.</p> // ✅ This should now display correctly
+          <p className="text-gray-500">No achievements yet.</p>
         )}
       </div>
-
 
       {/* Badges */}
       <div className="mb-4">
         <h2 className="text-xl font-semibold mb-2">🏅 Medals</h2>
-        {profileData.badges?.length > 0 ? (
+        {profileData?.badges?.length > 0 ? (
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {profileData.badges.map((badge: Badge) => (
               <div key={badge.id} className="medal-badge">
@@ -175,7 +185,7 @@ const Profile: React.FC = () => {
           </thead>
           <tbody>
             {leaderboard.map((entry: LeaderboardEntry, index: number) => (
-              <tr key={entry.id || entry.name || index} className={entry.id === user.id ? "bg-green-100" : ""}>
+              <tr key={entry.id || entry.name || index} className={entry.id === user?.id ? "bg-green-100" : ""}>
                 <td className="p-3">{index + 1}</td>
                 <td className="p-3">{entry.name}</td>
                 <td className="p-3">{entry.score}</td>
