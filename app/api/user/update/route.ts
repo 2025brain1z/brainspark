@@ -43,7 +43,7 @@ export async function PUT(req: NextRequest) {
       } else {
         // Assign correct medal icon
         user.badges.push({
-          id: new Date().toISOString(),
+          id: `${userId}-${Date.now()}`, // Combine userId and timestamp as a string
           name: medal,
           description: `1x ${medal}`,
           icon: medalIcon,

@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
     try {
       user = await User.findOneAndUpdate(
         { clerkId: userId },
-        { email, firstName, lastName },
+        { $set: { email, firstName, lastName, badges: [] } }, // Clear badges explicitly
         { new: true, upsert: true }
       );
       console.log("✅ User updated/created:", user);

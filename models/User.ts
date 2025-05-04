@@ -8,7 +8,7 @@ const achievementSchema = new mongoose.Schema({
 });
 
 const badgeSchema = new mongoose.Schema({
-  id: { type: String, required: true, unique: true }, // Unique identifier for React keys
+  id: { type: String, required: true, unique: true, sparse: true }, // Add sparse: true
   name: { type: String, required: true },
   description: { type: String, required: true },
   icon: { type: String, required: true },
