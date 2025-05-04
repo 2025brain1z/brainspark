@@ -11,3 +11,18 @@
     justify-content: center;
     text-wrap: wrap;
 }
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.blinkingCursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.2em;
+    background-color: currentColor;
+    margin-left: 1px;
+    vertical-align: middle;
+    animation: blink 1s infinite;
+}

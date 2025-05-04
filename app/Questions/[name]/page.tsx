@@ -25,7 +25,13 @@ export default function Page() {
   const [loadingQuestions, setLoadingQuestions] = useState(false);
   const [score, setScore] = useState(0);
   const [response, setResponse] = useState("");
-  const [output, setOutput] = useState("The response will appear here...");
+  const [output, setOutput] = useState(
+    <div className="flex items-center space-x-1">
+      <span>The response will appear here</span>
+      <span className="inline-block">...</span>
+      <span className={styles.blinkingCursor}></span>
+    </div>
+  );
   const [currentBatch, setCurrentBatch] = useState(0);
   const questionsPerPage = 10;
   const [selectedAnswers, setSelectedAnswers] = useState<{[key: number]: string}>({});
@@ -287,7 +293,10 @@ export default function Page() {
               <div className="w-full max-w-2xl bg-gray-100 p-4 rounded-md shadow">
                 <h2 className="text-lg font-semibold">Suggested Learning Path:</h2>
                 <div className="mt-2 prose">
-                  <Markdown>{response || output}</Markdown>
+                  <Markdown>
+                    {typeof output === 'string' ? output : 'The response will appear here...'}
+                  </Markdown>
+                  {!response && <span className={styles.blinkingCursor}></span>}
                 </div>
               </div>
   
