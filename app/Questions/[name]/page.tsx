@@ -302,42 +302,120 @@ export default function Page() {
                           <head>
                             <title>Quiz Results</title>
                             <style>
-                              body { font-family: Arial, sans-serif; padding: 20px; }
-                              h1 { font-size: 24px; }
-                              .question { margin-bottom: 15px; }
-                              .correct { color: green; font-weight: bold; }
+                              body { 
+                                font-family: Arial, sans-serif; 
+                                padding: 20px; 
+                                max-width: 800px;
+                                margin: 0 auto;
+                              }
+                              h1 { 
+                                font-size: 24px;
+                                color: #202124;
+                              }
+                              .question {
+                                margin-bottom: 30px;
+                                background: #f8f9fa;
+                                padding: 20px;
+                                border-radius: 8px;
+                              }
+                              .question-text {
+                                font-size: 16px;
+                                color: #202124;
+                                margin-bottom: 15px;
+                              }
+                              .option {
+                                padding: 10px 15px;
+                                margin: 5px 0;
+                                border-radius: 4px;
+                                position: relative;
+                              }
+                              .option.correct {
+                                background-color: #e6f4ea;
+                                border: 1px solid #137333;
+                                color: #137333;
+                              }
+                              .option.incorrect {
+                                background-color: #fce8e6;
+                                border: 1px solid #c5221f;
+                                color: #c5221f;
+                              }
+                              .option.normal {
+                                background-color: white;
+                                border: 1px solid #dadce0;
+                              }
+                              .question.unanswered {
+                                border: 2px solid #c5221f;
+                                position: relative;
+                              }
+                              
+                              .option.skipped {
+                                background-color: #fff3f3;
+                                border: 1px solid #c5221f;
+                              }
+                              .legend {
+                                display: flex;
+                                gap: 20px;
+                                padding: 15px;
+                                background-color: #f8f9fa;
+                                border-radius: 8px;
+                                margin: 10px 0 20px 0;
+                              }
+                              .legend p {
+                                margin: 0;
+                                display: flex;
+                                align-items: center;
+                              }
+                              .icon {
+                                margin-right: 8px;
+                              }
                             </style>
                           </head>
                           <body>
                             <h1>Quiz Results</h1>
+                            <div class="legend">
+                              <p><span class="icon">✓</span> Correct Answer</p>
+                              <p><span class="icon">✗</span> Incorrect Answer</p>
+                              <p><span style="color: #c5221f">■</span> Not Answered</p>
+                            </div>
                             ${questions
                               .map(
                                 (q, i) => {
                                   const userAnswer = selectedAnswers[i];
                                   const isAnswered = userAnswer !== undefined && userAnswer !== null && userAnswer !== '';
-                                  const isCorrect = isAnswered && userAnswer?.toString().toLowerCase() === q.correctOption?.toString().toLowerCase();
                                   
                                   return `
-                                    <div class="question">
-                                      <p><strong>Question ${i + 1}:</strong> ${q.question}</p>
-                                      <p class="answer-status ${!isAnswered ? 'unanswered' : isCorrect ? 'correct' : 'incorrect'}">
-                                        Your Answer: ${!isAnswered ? 'Not answered' : userAnswer}
-                                        ${!isAnswered ? ' ⚠️' : isCorrect ? ' ✅' : ' ❌'}
-                                      </p>
-                                      <p class="correct-answer correct">
-                                        Correct Answer: ${q.correctOption}
-                                      </p>
+                                    <div class="question ${!isAnswered ? 'unanswered' : ''}">
+                                      <div class="question-text">
+                                        <strong>Question ${i + 1}:</strong> ${q.question}
+                                      </div>
+                                      ${q.options.map(option => {
+                                        let optionClass = 'normal';
+                                        let icon = '';
+                                        
+                                        if (option === q.correctOption) {
+                                          optionClass = 'correct';
+                                          icon = '✓';
+                                        } else if (isAnswered && option === userAnswer) {
+                                          optionClass = 'incorrect';
+                                          icon = '✗';
+                                        } else if (!isAnswered) {
+                                          optionClass = 'skipped';
+                                        }
+                                        
+                                        return `
+                                          <div class="option ${optionClass}">
+                                            <span class="icon">${icon}</span>
+                                            ${option}
+                                            ${option === userAnswer ? ' (Your answer)' : ''}
+                                            ${option === q.correctOption ? ' (Correct answer)' : ''}
+                                          </div>
+                                        `;
+                                      }).join('')}
                                     </div>
                                   `;
                                 }
                               )
                               .join("")}
-                            <div style="margin-top: 20px; padding: 10px; background-color: #f0f0f0; border-radius: 4px;">
-                              <p><strong>Legend:</strong></p>
-                              <p>✅ Correct Answer</p>
-                              <p>❌ Incorrect Answer</p>
-                              <p>⚠️ Question Not Answered</p>
-                            </div>
                           </body>
                         </html>
                       `);
