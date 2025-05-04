@@ -9,6 +9,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import Confetti from "@/components/Confetti";
 import { useUser } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
+import styles from "@/styles/styles.module.css";
 
 // Define the type for a quiz question
 type Question = {
@@ -29,7 +30,13 @@ function QuizContent() {
 
   const [score, setScore] = useState(0);
   const [response, setResponse] = useState("");
-  const [output, setOutput] = useState("The response will appear here...");
+  const [output, setOutput] = useState(
+    <div className="flex items-center space-x-1">
+      <span>The response will appear here</span>
+      <span className="inline-block">...</span>
+      <span className={styles.blinkingCursor}></span>
+    </div>
+  );
   const [currentBatch, setCurrentBatch] = useState(0);
   const questionsPerPage = 10;
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, string>>({});
@@ -152,9 +159,21 @@ function QuizContent() {
 
   useEffect(() => {
     if (response.length === 0) return;
-    setOutput("");
+    setOutput(
+      <div className="flex items-center space-x-1">
+        <span></span>
+        <span className={styles.blinkingCursor}></span>
+      </div>
+    );
     response.split("").forEach((char, i) => {
-      setTimeout(() => setOutput((prev) => prev + char), i * 10);
+      setTimeout(() => {
+        setOutput(prev => (
+          <div className="flex items-center space-x-1">
+            <span>{typeof prev === 'string' ? prev + char : prev.props.children[0].props.children + char}</span>
+            <span className={styles.blinkingCursor}></span>
+          </div>
+        ));
+      }, i * 10);
     });
   }, [response]);
 
@@ -239,7 +258,15 @@ function QuizContent() {
               <div className="w-full max-w-2xl bg-gray-100 p-4 rounded-md shadow">
                 <h2 className="text-lg font-semibold">Suggested Learning Path:</h2>
                 <div className="mt-2 prose">
-                  <Markdown>{response || output}</Markdown>
+                  {response ? (
+                    <Markdown>{response}</Markdown>
+                  ) : (
+                    <div className="flex items-center space-x-1">
+                      <span>The response will appear here</span>
+                      <span className="inline-block">...</span>
+                      <span className={styles.blinkingCursor}></span>
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -255,29 +282,124 @@ function QuizContent() {
                           <head>
                             <title>Quiz Results</title>
                             <style>
-                              body { font-family: Arial, sans-serif; padding: 20px; }
-                              h1 { font-size: 24px; }
-                              .question { margin-bottom: 15px; }
-                              .correct { color: green; font-weight: bold; }
+                              body { 
+                                font-family: Arial, sans-serif; 
+                                padding: 20px; 
+                                max-width: 800px;
+                                margin: 0 auto;
+                              }
+                              h1 { 
+                                font-size: 24px;
+                                color: #202124;
+                              }
+                              .question {
+                                margin-bottom: 30px;
+                                background: #f8f9fa;
+                                padding: 20px;
+                                border-radius: 8px;
+                              }
+                              .question-text {
+                                font-size: 16px;
+                                color: #202124;
+                                margin-bottom: 15px;
+                              }
+                              .option {
+                                padding: 10px 15px;
+                                margin: 5px 0;
+                                border-radius: 4px;
+                                position: relative;
+                              }
+                              .option.correct {
+                                background-color: #e6f4ea;
+                                border: 1px solid #137333;
+                                color: #137333;
+                              }
+                              .option.incorrect {
+                                background-color: #fce8e6;
+                                border: 1px solid #c5221f;
+                                color: #c5221f;
+                              }
+                              .option.normal {
+                                background-color: white;
+                                border: 1px solid #dadce0;
+                              }
+                              .question.unanswered {
+                                border: 2px solid #c5221f;
+                                position: relative;
+                              }
+                              .option.skipped {
+                                background-color: #fff3f3;
+                                border: 1px solid #c5221f;
+                              }
+                              .legend {
+                                display: flex;
+                                gap: 20px;
+                                padding: 15px;
+                                background-color: #f8f9fa;
+                                border-radius: 8px;
+                                margin: 10px 0 20px 0;
+                              }
+                              .legend p {
+                                margin: 0;
+                                display: flex;
+                                align-items: center;
+                              }
+                              .icon {
+                                margin-right: 8px;
+                              }
                             </style>
                           </head>
                           <body>
                             <h1>Quiz Results</h1>
+                            <div class="legend">
+                              <p><span class="icon">✓</span> Correct Answer</p>
+                              <p><span class="icon">✗</span> Incorrect Answer</p>
+                              <p><span style="color: #c5221f">■</span> Not Answered</p>
+                            </div>
                             ${questions
                               .map(
-                                (q, i) => `
-                              <div class="question">
-                                <p><strong>Q${i + 1}:</strong> ${q.question}</p>
-                                <p class="correct">Correct Answer: ${q.correctOption}</p>
-                              </div>
-                            `
+                                (q, i) => {
+                                  const userAnswer = selectedAnswers[i];
+                                  const isAnswered = userAnswer !== undefined && userAnswer !== null && userAnswer !== '';
+                                  
+                                  return `
+                                    <div class="question ${!isAnswered ? 'unanswered' : ''}">
+                                      <div class="question-text">
+                                        <strong>Question ${i + 1}:</strong> ${q.question}
+                                      </div>
+                                      ${q.options.map(option => {
+                                        let optionClass = 'normal';
+                                        let icon = '';
+                                        
+                                        if (option === q.correctOption) {
+                                          optionClass = 'correct';
+                                          icon = '✓';
+                                        } else if (isAnswered && option === userAnswer) {
+                                          optionClass = 'incorrect';
+                                          icon = '✗';
+                                        } else if (!isAnswered) {
+                                          optionClass = 'skipped';
+                                        }
+                                        
+                                        return `
+                                          <div class="option ${optionClass}">
+                                            <span class="icon">${icon}</span>
+                                            ${option}
+                                            ${option === userAnswer ? ' (Your answer)' : ''}
+                                            ${option === q.correctOption ? ' (Correct answer)' : ''}
+                                          </div>
+                                        `;
+                                      }).join('')}
+                                    </div>
+                                  `;
+                                }
                               )
                               .join("")}
                           </body>
                         </html>
                       `);
-                      resultWindow.document.close(); // Ensure content loads
-                      resultWindow.focus(); // Bring tab to foreground
+                      resultWindow.document.close();
+                      resultWindow.focus();
                     }
                   }}
                 >

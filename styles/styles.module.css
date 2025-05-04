@@ -19,7 +19,7 @@
 
 .blinkingCursor {
     display: inline-block;
-    width: 2px;
+    width: 4px;
     height: 1.2em;
     background-color: currentColor;
     margin-left: 1px;

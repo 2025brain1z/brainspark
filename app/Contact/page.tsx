@@ -71,7 +71,40 @@ export default function Contact() {
       <div className="flex flex-col lg:flex-row lg:justify-around items-center overflow-x-hidden mt-10 lg:mt-5 mb-10">
         <Toaster />
         
-        {/* Left Section (Form) */}
+        {/* Left Section (Contact Info) */}
+        <div className="flex flex-col lg:justify-around lg:gap-10 lg:h-3/4 items-center mb-20 lg:mb-0 gap-10">
+          <div className="flex flex-col gap-5">
+            <h1 className="text-5xl font-black text-center">Contact Us</h1>
+            <p className="text-lg w-80 text-center">
+              Fill up the form and we will get back to you within 24 hours.
+            </p>
+          </div>
+          <div className="flex flex-col gap-5">
+            <span className="flex gap-5 items-center">
+              <Image
+                src="/gmail.png"
+                className="hover:scale-110 transition ease-in-out"
+                alt="email"
+                width={25}
+                height={25}
+              />
+              <p>brainspark456@gmail.com</p>
+            </span>
+          </div>
+          <div className="flex gap-10">
+            <Link href="https://github.com/2025brain1z/brainspark">
+              <Image
+                src="/github-contact.png"
+                className="hover:scale-110 transition ease-in-out"
+                alt="github"
+                width={35}
+                height={35}
+              />
+            </Link>
+          </div>
+        </div>
+
+        {/* Right Section (Form) */}
         <div className="flex flex-col justify-center gap-7 h-3/4">
           <h1 className="text-5xl font-black text-center">Feedback</h1>
           <div className="flex flex-col gap-2">
@@ -120,50 +153,6 @@ export default function Contact() {
           >
             {loading ? <BeatLoader size={8} color="white" /> : "Send Message"}
           </button>
-        </div>
-
-        {/* Right Section (Contact Info) */}
-        <div className="flex flex-col lg:justify-around lg:gap-40 lg:h-3/4 items-center mb-20 lg:mb-0 gap-10">
-          <div className="flex flex-col gap-5">
-            <h1 className="text-5xl font-black text-center">Contact Us</h1>
-            <p className="text-lg w-80 text-center">
-              Fill up the form and we will get back to you within 24 hours.
-            </p>
-          </div>
-          <div className="flex flex-col gap-5">
-            <span className="flex gap-5 items-center">
-              <Image
-                src="/phone-contact.png"
-                className="hover:scale-110 transition ease-in-out"
-                alt="phone"
-                width={25}
-                height={25}
-              />
-              <p>+233 55 182 1990</p>
-            </span>
-            <span className="flex gap-5 items-center">
-              <Image
-                src="/gmail.png"
-                className="hover:scale-110 transition ease-in-out"
-                alt="email"
-                width={25}
-                height={25}
-              />
-              <p>brainspark456@gmail.com</p>
-            </span>
-          </div>
-          <div className="flex gap-10">
-            
-            <Link href="https://github.com/2025brain1z/">
-              <Image
-                src="/github-contact.png"
-                className="hover:scale-110 transition ease-in-out"
-                alt="github"
-                width={35}
-                height={35}
-              />
-            </Link>
-          </div>
         </div>
       </div>
     </>
