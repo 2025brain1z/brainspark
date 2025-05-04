@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect } from "react";
+import { useUser } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
@@ -8,6 +10,38 @@ import toast, { Toaster } from "react-hot-toast";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
+  const { user, isLoaded } = useUser();
+
+  useEffect(() => {
+    const registerUser = async () => {
+      if (!user || !isLoaded) return;
+
+      try {
+        const response = await fetch('/api/user/register', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            email: user.primaryEmailAddress?.emailAddress,
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error('Registration failed');
+        }
+
+        const data = await response.json();
+        console.log('User registered:', data);
+      } catch (error) {
+        console.error('Registration error:', error);
+        toast.error('Failed to register user');
+      }
+    };
+
+    registerUser();
+  }, [user, isLoaded]);
+
   return (
     <div className={styles.homeContainer}>
       <Toaster />

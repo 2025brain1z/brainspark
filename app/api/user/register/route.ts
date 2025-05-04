@@ -16,19 +16,41 @@ export async function POST(req: NextRequest) {
 
     // Get user using currentUser
     const clerkUser = await currentUser();
-    console.log("✅ Clerk user:", clerkUser);
     if (!clerkUser) return NextResponse.json({ error: "User not found in Clerk" }, { status: 404 });
 
     const firstName = clerkUser.firstName || "Unknown";
     const lastName = clerkUser.lastName || "User";
 
+    // First check if user exists
+    const existingUser = await User.findOne({ clerkId: userId });
+
     let user;
     try {
-      user = await User.findOneAndUpdate(
-        { clerkId: userId },
-        { $set: { email, firstName, lastName, badges: [] } }, // Clear badges explicitly
-        { new: true, upsert: true }
-      );
+      if (existingUser) {
+        // If user exists, only update email and names if needed
+        user = await User.findOneAndUpdate(
+          { clerkId: userId },
+          { 
+            $set: { 
+              email, 
+              firstName, 
+              lastName 
+            }
+          },
+          { new: true }
+        );
+      } else {
+        // If user doesn't exist, create new user with initial empty badges
+        user = await User.create({
+          clerkId: userId,
+          email,
+          firstName,
+          lastName,
+          badges: [],
+          points: 0,
+          dailyStreak: 0
+        });
+      }
       console.log("✅ User updated/created:", user);
     } catch (dbError) {
       console.error("❌ Database error:", dbError);

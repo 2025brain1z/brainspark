@@ -40,40 +40,50 @@ const Profile: React.FC = () => {
   const [profileData, setProfileData] = useState<ProfileData | null>(null);
   const [leaderboard, setLeaderboard] = useState<LeaderboardEntry[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [isRegistered, setIsRegistered] = useState(false);
 
   useEffect(() => {
     if (!user) return;
 
-    // Register the user by sending a POST request
-    const registerUser = async () => {
-      await fetch("/api/user/register", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: user.primaryEmailAddress?.emailAddress }),
-      });
+    const checkAndRegisterUser = async () => {
+      // First check if user exists
+      const checkRes = await fetch(`/api/userprofile?userId=${user.id}`);
+      const checkData = await checkRes.json();
+      
+      if (checkData.error) {
+        // Only register if user doesn't exist
+        await fetch("/api/user/register", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: user.primaryEmailAddress?.emailAddress }),
+        });
+      } else {
+        setProfileData(checkData);
+      }
+      setIsRegistered(true);
     };
 
-    registerUser();
+    const fetchData = async () => {
+      if (!isRegistered) {
+        await checkAndRegisterUser();
+      } else {
+        const res = await fetch(`/api/userprofile?userId=${user.id}`);
+        const data = await res.json();
+        if (!data.error) {
+          setProfileData(data);
+        }
+      }
 
-    const fetchUserData = async () => {
-      const res = await fetch(`/api/userprofile?userId=${user.id}`);
-      const data = await res.json();
-      if (!data.error) {
-        setProfileData(data);
+      // Fetch leaderboard
+      const leaderRes = await fetch(`/api/leaderboard`);
+      const leaderData = await leaderRes.json();
+      if (!leaderData.error) {
+        setLeaderboard(leaderData);
       }
     };
 
-    const fetchLeaderboard = async () => {
-      const res = await fetch(`/api/leaderboard`);
-      const data = await res.json();
-      if (!data.error) {
-        setLeaderboard(data);
-      }
-    };
-
-    fetchUserData();
-    fetchLeaderboard();
-  }, [user]);
+    fetchData();
+  }, [user, isRegistered]);
 
   if (!user || !profileData) {
     return (

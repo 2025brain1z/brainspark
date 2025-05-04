@@ -26,6 +26,11 @@ export async function PUT(req: NextRequest) {
       return NextResponse.json({ error: "User not found" }, { status: 404 });
     }
 
+    // Initialize badges array if it doesn't exist
+    if (!user.badges) {
+      user.badges = [];
+    }
+
     // 🏆 Handling Medals & Badges (Ignore "Try Again")
     if (medal && medal !== "💔 Try Again") {
       const medalIcon = medalIcons[medal] || "/icon/default-medal.png";
