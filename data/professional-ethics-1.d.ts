@@ -403,7 +403,7 @@ export const questions = [
       "Both of the above",
       "None of the above"
     ],
-    correctOption: "Tarasoff",
+    correctOption: "Eisel",
     difficulty: "beginner"
   },
   {

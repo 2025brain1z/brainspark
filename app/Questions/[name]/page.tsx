@@ -420,8 +420,6 @@ export default function Page() {
                                           <div class="option ${optionClass}">
                                             <span class="icon">${icon}</span>
                                             ${option}
-                                            ${option === userAnswer ? ' (Your answer)' : ''}
-                                            ${option === q.correctOption ? ' (Correct answer)' : ''}
                                           </div>
                                         `;
                                       }).join('')}
