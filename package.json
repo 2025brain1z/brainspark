@@ -19,6 +19,7 @@
     "@radix-ui/react-slot": "^1.1.1",
     "@radix-ui/react-toggle": "^1.1.1",
     "@rive-app/react-canvas": "^3.0.57",
+    "adm-zip": "^0.5.16",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "formidable": "^3.5.2",
@@ -41,13 +42,17 @@
     "resend": "^3.5.0",
     "rive-react": "^4.17.10",
     "tailwind-merge": "^2.6.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
     "@types/node": "^20.17.16",
     "@types/pdf-parse": "^1.1.4",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
+    "@types/unzipper": "^0.10.11",
+    "@types/xml2js": "^0.4.14",
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.1",
     "eslint-config-next": "^15.2.0",

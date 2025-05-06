@@ -6,8 +6,6 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import Navbar from "@/components/Navbar";
 
-
-
 export default function UploadNotes() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [selectedDifficulty, setSelectedDifficulty] = useState<string | null>(null);
@@ -16,21 +14,18 @@ export default function UploadNotes() {
   const router = useRouter();
   const [topic, setTopic] = useState<string>("");
 
-
-
   // Update global variable whenever topic changes
   const handleTopicChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.slice(0, 100); // Enforce 100-char limit
     setTopic(value);
   };
 
-
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
-      const allowedTypes = ["application/pdf"];
+      const allowedTypes = ["application/pdf", "application/vnd.openxmlformats-officedocument.presentationml.presentation"];
       if (!allowedTypes.includes(file.type)) {
-        setError("Invalid file type. Only PDF files are allowed.");
+        setError("Invalid file type. Only PDF and PowerPoint (PPTX) files are allowed.");
         setSelectedFile(null);
       } else {
         setError(null);
@@ -44,6 +39,12 @@ export default function UploadNotes() {
       setError("Please select a file and difficulty level.");
       return;
     }
+
+    if (!topic.trim()) {
+      setError("Please enter a course or topic name.");
+      return;
+    }
+
     setError(null);
     setLoading(true);
 
@@ -53,6 +54,7 @@ export default function UploadNotes() {
 
     console.log("Uploading file:", selectedFile.name);
     console.log("Selected difficulty:", selectedDifficulty);
+    console.log("Topic:", topic);
 
     try {
       const response = await fetch("/api/upload", {
@@ -83,14 +85,35 @@ export default function UploadNotes() {
 
       <div className="flex flex-grow items-center justify-center">
         <div className="flex flex-col items-center p-6 border rounded-lg shadow-md bg-white w-full max-w-md">
-          <h2 className="text-lg font-semibold mb-4">Upload Lecture Notes (PDF)</h2>
+          <h2 className="text-lg font-semibold mb-4">Upload Lecture Notes</h2>
 
-          <input type="file" accept=".pdf" onChange={handleFileChange} className="mb-3" />
-          {selectedFile && <p className="text-sm text-gray-600">Selected: {selectedFile.name}</p>}
-          {error && <p className="text-sm text-red-500">{error}</p>}
+          <div className="w-full mb-3">
+            <Label htmlFor="fileUpload" className="font-semibold block mb-2">Select File (PDF or PPTX)</Label>
+            <input 
+              id="fileUpload"
+              type="file" 
+              accept=".pdf,.pptx" 
+              onChange={handleFileChange} 
+              className="w-full border rounded p-2"
+            />
+          </div>
+          
+          {selectedFile && (
+            <div className="w-full mb-3 p-2 bg-blue-50 rounded-md">
+              <p className="text-sm text-gray-700 flex items-center">
+                <span className="mr-1">📄</span> 
+                {selectedFile.name}
+                <span className="ml-auto text-xs text-gray-500">
+                  {(selectedFile.size / 1024 / 1024).toFixed(2)} MB
+                </span>
+              </p>
+            </div>
+          )}
+          
+          {error && <p className="text-sm text-red-500 w-full mb-3">{error}</p>}
 
           {/* ✅ Course/Topic Name Input */}
-          <div className="mt-3 w-full">
+          <div className="mt-1 w-full">
             <Label htmlFor="topicName" className="font-semibold">Course/Topic Name</Label>
             <input
               id="topicName"
@@ -131,8 +154,12 @@ export default function UploadNotes() {
               <p className="text-sm text-blue-500 mt-2">Getting your questions ready...</p>
             </div>
           ) : (
-            <Button onClick={handleSubmit} className="mt-4" disabled={loading}>
-              Upload Notes
+            <Button 
+              onClick={handleSubmit} 
+              className="mt-4 w-full" 
+              disabled={loading || !selectedFile || !selectedDifficulty || !topic.trim()}
+            >
+              Generate Quiz
             </Button>
           )}
         </div>

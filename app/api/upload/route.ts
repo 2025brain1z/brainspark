@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { writeFile, readFile } from "fs/promises";
 import path from "path";
 import { generateQuizQuestions, saveQuestionsToFile } from "@/utils/quizGenerator";
+import { extractTextFromPPTX } from "@/utils/pptxExtractor";
 
 export async function POST(req: NextRequest) {
     // @ts-ignore
@@ -22,12 +23,23 @@ export async function POST(req: NextRequest) {
     console.log("📂 File saved at:", uploadPath);
 
     try {
-        // Read and extract text from PDF
-        const pdfBuffer = await readFile(uploadPath);
-        const pdfData = await pdfParse(pdfBuffer);
-        const extractedText = pdfData.text;
+        let extractedText: string;
+        const fileExtension = path.extname(file.name).toLowerCase();
 
-        console.log("📖 Extracted text:", extractedText.slice(0, 500)); // Log first 500 chars for debugging
+        // Extract text based on file type
+        if (fileExtension === ".pdf") {
+            // PDF processing
+            const pdfBuffer = await readFile(uploadPath);
+            const pdfData = await pdfParse(pdfBuffer);
+            extractedText = pdfData.text;
+            console.log("📖 Extracted text from PDF:", extractedText.slice(0, 500)); // Log first 500 chars for debugging
+        } else if (fileExtension === ".pptx") {
+            // PPTX processing
+            extractedText = await extractTextFromPPTX(uploadPath);
+            console.log("📖 Extracted text from PPTX:", extractedText.slice(0, 500)); // Log first 500 chars for debugging
+        } else {
+            return NextResponse.json({ error: "Unsupported file format. Please upload a PDF or PPTX file." }, { status: 400 });
+        }
 
         // Call GPT-4o Mini API to generate quiz questions
         const questions = await generateQuizQuestions(extractedText, difficulty);
@@ -45,7 +57,7 @@ export async function POST(req: NextRequest) {
 
         return NextResponse.json({ success: true, questions });
     } catch (error) {
-        console.error("❌ Error processing PDF:", error);
-        return NextResponse.json({ error: "Failed to process PDF" }, { status: 500 });
+        console.error(`❌ Error processing ${file.name}:`, error);
+        return NextResponse.json({ error: `Failed to process ${file.name}` }, { status: 500 });
     }
 }

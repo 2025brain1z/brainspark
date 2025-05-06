@@ -61,12 +61,20 @@ function QuizContent() {
   const onNext = () => {
     if (currentBatch + 1 < totalBatches) {
       setCurrentBatch(currentBatch + 1);
+      const middleSection = document.querySelector('.w-1\\/2.flex.flex-col.justify-start.items-center.p-8.pt-10.overflow-y-auto.max-h-screen');
+      if (middleSection) {
+        middleSection.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     }
   };
-
+  
   const onPrevious = () => {
     if (currentBatch > 0) {
       setCurrentBatch(currentBatch - 1);
+      const middleSection = document.querySelector('.w-1\\/2.flex.flex-col.justify-start.items-center.p-8.pt-10.overflow-y-auto.max-h-screen');
+      if (middleSection) {
+        middleSection.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     }
   };
 
@@ -385,8 +393,6 @@ function QuizContent() {
                                           <div class="option ${optionClass}">
                                             <span class="icon">${icon}</span>
                                             ${option}
-                                            ${option === userAnswer ? ' (Your answer)' : ''}
-                                            ${option === q.correctOption ? ' (Correct answer)' : ''}
                                           </div>
                                         `;
                                       }).join('')}
