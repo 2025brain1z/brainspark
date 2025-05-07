@@ -3309,5 +3309,2083 @@ export const questions = [
     ],
     correctOption: "A plan for selling an investment to realize returns",
     difficulty: "advanced"
+  },
+  {
+    question: "What is the main goal of a business in terms of finance?",
+    options: [
+      "Decrease equity",
+      "Increase expenses",
+      "Reduce assets",
+      "Maximize profits"
+    ],
+    correctOption: "Maximize profits",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a financial statement?",
+    options: [
+      "Payroll",
+      "Purchase Order",
+      "Invoice",
+      "Balance Sheet"
+    ],
+    correctOption: "Balance Sheet",
+    difficulty: "beginner"
+  },
+  {
+    question: "What does ROI stand for?",
+    options: [
+      "Return on Investment",
+      "Refund on Insurance",
+      "Revenue on Inventory",
+      "Rate of Interest"
+    ],
+    correctOption: "Return on Investment",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is considered a liability?",
+    options: [
+      "Bank loan",
+      "Cash",
+      "Inventory",
+      "Office building"
+    ],
+    correctOption: "Bank loan",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which item is classified as an asset?",
+    options: [
+      "Bank loan",
+      "Interest expense",
+      "Cash",
+      "Accounts payable"
+    ],
+    correctOption: "Cash",
+    difficulty: "beginner"
+  },
+  {
+    question: "What is the purpose of a cash flow statement?",
+    options: [
+      "To track cash inflows and outflows",
+      "To summarize equity",
+      "To list expenses only",
+      "To calculate tax"
+    ],
+    correctOption: "To track cash inflows and outflows",
+    difficulty: "beginner"
+  },
+  {
+    question: "What is the purpose of a income statement?",
+    options: [
+      "To show revenues and expenses",
+      "To list assets",
+      "To describe operations",
+      "To display profits only"
+    ],
+    correctOption: "To show revenues and expenses",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is an example of revenue?",
+    options: [
+      "Sales",
+      "Interest payable",
+      "Rent",
+      "Loan"
+    ],
+    correctOption: "Sales",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is an example of a liability?",
+    options: [
+      "Sales",
+      "Inventory",
+      "Cash",
+      "Accounts payable"
+    ],
+    correctOption: "Accounts payable",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is an example of an asset?",
+    options: [
+      "Loan",
+      "Interest expense",
+      "Inventory",
+      "Accounts payable"
+    ],
+    correctOption: "Inventory",
+    difficulty: "beginner"
+  },
+  {
+    question: "What is the purpose of a budget?",
+    options: [
+      "To reduce profits",
+      "To ignore costs",
+      "To plan future expenses",
+      "To increase taxes"
+    ],
+    correctOption: "To plan future expenses",
+    difficulty: "beginner"
+  },
+  {
+    question: "What is the purpose of a balance sheet?",
+    options: [
+      "To show a company’s financial position",
+      "To list customer names",
+      "To show employee satisfaction",
+      "To advertise products"
+    ],
+    correctOption: "To show a company’s financial position",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a source of short-term financing?",
+    options: [
+      "Long-term bonds",
+      "Bank overdraft",
+      "Equity financing",
+      "Retained earnings"
+    ],
+    correctOption: "Bank overdraft",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a source of long-term financing?",
+    options: [
+      "Accounts payable",
+      "Bank overdraft",
+      "Long-term bonds",
+      "Trade credit"
+    ],
+    correctOption: "Long-term bonds",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a type of equity financing?",
+    options: [
+      "Bank loan",
+      "Common stock",
+      "Accounts payable",
+      "Trade credit"
+    ],
+    correctOption: "Common stock",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a type of debt financing?",
+    options: [
+      "Common stock",
+      "Preferred stock",
+      "Bonds",
+      "Retained earnings"
+    ],
+    correctOption: "Bonds",
+    difficulty: "beginner"
+  },
+  {
+    question: "What is the primary purpose of financial management?",
+    options: [
+      "To maximize profits",
+      "To minimize costs",
+      "To maximize shareholder wealth",
+      "To reduce taxes"
+    ],
+    correctOption: "To maximize shareholder wealth",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a financial market?",
+    options: [
+      "Retail store",
+      "Stock exchange",
+      "Manufacturing plant",
+      "Service center"
+    ],
+    correctOption: "Stock exchange",
+    difficulty: "beginner"
+  },
+  {
+    question: "What is the primary function of a financial institution?",
+    options: [
+      "To provide loans",
+      "To manufacture products",
+      "To sell goods",
+      "To hire employees"
+    ],
+    correctOption: "To provide loans",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a type of financial instrument?",
+    options: [
+      "Stocks",
+      "Bonds",
+      "Derivatives",
+      "All of the above"
+    ],
+    correctOption: "All of the above",
+    difficulty: "beginner"
+  },
+  {
+    question: "What is the primary purpose of a financial intermediary?",
+    options: [
+      "To facilitate transactions",
+      "To manufacture products",
+      "To sell goods",
+      "To hire employees"
+    ],
+    correctOption: "To facilitate transactions",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a type of financial analysis?",
+    options: [
+      "Trend analysis",
+      "Variance analysis",
+      "Ratio analysis",
+      "All of the above"
+    ],
+    correctOption: "All of the above",
+    difficulty: "beginner"
+  },
+  {
+    question: "What is the primary purpose of financial forecasting?",
+    options: [
+      "To predict future financial performance",
+      "To ignore past performance",
+      "To reduce expenses",
+      "To increase taxes"
+    ],
+    correctOption: "To predict future financial performance",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a type of financial risk management?",
+    options: [
+      "Hedging",
+      "Diversification",
+      "Insurance",
+      "All of the above"
+    ],
+    correctOption: "All of the above",
+    difficulty: "beginner"
+  },
+  {
+    question: "What is the primary purpose of financial regulation?",
+    options: [
+      "To protect investors",
+      "To increase profits",
+      "To reduce competition",
+      "To ignore risks"
+    ],
+    correctOption: "To protect investors",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a type of financial market?",
+    options: [
+      "Capital market",
+      "Money market",
+      "Foreign exchange market",
+      "All of the above"
+    ],
+    correctOption: "All of the above",
+    difficulty: "beginner"
+  },
+  {
+    question: "What is the primary purpose of financial reporting?",
+    options: [
+      "To provide information to stakeholders",
+      "To ignore past performance",
+      "To reduce expenses",
+      "To increase taxes"
+    ],
+    correctOption: "To provide information to stakeholders",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a type of financial statement?",
+    options: [
+      "Income statement",
+      "Balance sheet",
+      "Cash flow statement",
+      "All of the above"
+    ],
+    correctOption: "All of the above",
+    difficulty: "beginner"
+  },
+  {
+    question: "What is the primary purpose of financial auditing?",
+    options: [
+      "To verify financial statements",
+      "To ignore past performance",
+      "To reduce expenses",
+      "To increase taxes"
+    ],
+    correctOption: "To verify financial statements",
+    difficulty: "beginner"
+  },
+  {
+    question: "What is the primary purpose of financial modeling?",
+    options: [
+      "To predict future financial performance",
+      "To ignore past performance",
+      "To reduce expenses",
+      "To increase taxes"
+    ],
+    correctOption: "To predict future financial performance",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a type of financial risk?",
+    options: [
+      "Market risk",
+      "Credit risk",
+      "Liquidity risk",
+      "All of the above"
+    ],
+    correctOption: "All of the above",
+    difficulty: "beginner"
+  },
+  {
+    question: "What is the primary purpose of financial planning?",
+    options: [
+      "To ignore past performance",
+      "To reduce expenses",
+      "To achieve financial goals",
+      "To increase taxes"
+    ],
+    correctOption: "To achieve financial goals",
+    difficulty: "beginner"
+  },
+  {
+    question: "What is the primary purpose of financial analysis?",
+    options: [
+      "To increase expenses",
+      "To evaluate financial performance",
+      "To ignore profits",
+      "To reduce assets"
+    ],
+    correctOption: "To evaluate financial performance",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a type of financial statement analysis?",
+    options: [
+      "Horizontal analysis",
+      "Vertical analysis",
+      "Ratio analysis",
+      "All of the above"
+    ],
+    correctOption: "All of the above",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a type of financial ratio?",
+    options: [
+      "Liquidity ratio",
+      "Profitability ratio",
+      "Leverage ratio",
+      "All of the above"
+    ],
+    correctOption: "All of the above",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a measure of liquidity?",
+    options: [
+      "Current ratio",
+      "Debt-to-equity ratio",
+      "Return on equity",
+      "Gross margin"
+    ],
+    correctOption: "Current ratio",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a measure of leverage?",
+    options: [
+      "Current ratio",
+      "Debt-to-equity ratio",
+      "Return on equity",
+      "Gross margin"
+    ],
+    correctOption: "Debt-to-equity ratio",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a measure of profitability?",
+    options: [
+      "Current ratio",
+      "Debt-to-equity ratio",
+      "Return on equity",
+      "Gross margin"
+    ],
+    correctOption: "Return on equity",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a measure of solvency?",
+    options: [
+      "Current ratio",
+      "Debt-to-equity ratio",
+      "Return on equity",
+      "Gross margin"
+    ],
+    correctOption: "Debt-to-equity ratio",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a measure of efficiency?",
+    options: [
+      "Current ratio",
+      "Debt-to-equity ratio",
+      "Return on equity",
+      "Gross margin"
+    ],
+    correctOption: "Current ratio",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a measure of activity?",
+    options: [
+      "Current ratio",
+      "Inventory turnover",
+      "Return on equity",
+      "Gross margin"
+    ],
+    correctOption: "Inventory turnover",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is an example of equity?",
+    options: [
+      "Interest",
+      "Rent expense",
+      "Owner's capital",
+      "Bank loan"
+    ],
+    correctOption: "Owner's capital",
+    difficulty: "beginner"
+  },
+  {
+    question: "What does the debt-to-equity ratio measure?",
+    options: [
+      "Asset turnover",
+      "Net income",
+      "Liquidity",
+      "Financial leverage"
+    ],
+    correctOption: "Financial leverage",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which method is commonly used to evaluate capital investment projects?",
+    options: [
+      "Liquidity Ratio",
+      "Net Present Value (NPV)",
+      "Trial Balance",
+      "Depreciation Schedule"
+    ],
+    correctOption: "Net Present Value (NPV)",
+    difficulty: "intermediate"
+  },
+  {
+    question: "What is the effect of a stock split on shareholders’ equity?",
+    options: [
+      "It doubles",
+      "Decrease",
+      "No change",
+      "Increase"
+    ],
+    correctOption: "No change",
+    difficulty: "intermediate"
+  },
+  {
+    question: "What financial metric indicates a company’s ability to cover interest expenses?",
+    options: [
+      "Debt Ratio",
+      "Gross Margin",
+      "Interest Coverage Ratio",
+      "Inventory Turnover"
+    ],
+    correctOption: "Interest Coverage Ratio",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which of the following reflects the time value of money?",
+    options: [
+      "Gross Margin",
+      "Inventory Turnover",
+      "Depreciation",
+      "Discounted Cash Flow"
+    ],
+    correctOption: "Discounted Cash Flow",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which financial metric is most useful for evaluating profitability?",
+    options: [
+      "Return on Equity",
+      "Inventory Turnover",
+      "Debt Ratio",
+      "Current Ratio"
+    ],
+    correctOption: "Return on Equity",
+    difficulty: "intermediate"
+  },
+  {
+    question: "The working capital is used to analyze a company’s short-term liquidity.",
+    options: [
+      "Operating income",
+      "Working capital",
+      "Earnings per share",
+      "Revenue"
+    ],
+    correctOption: "Working capital",
+    difficulty: "intermediate"
+  },
+  {
+    question: "The current ratio is used to analyze a company’s short-term liquidity.",
+    options: [
+      "Current ratio",
+      "Debt ratio",
+      "Return on equity",
+      "Gross margin"
+    ],
+    correctOption: "Current ratio",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which financial metric is most useful for evaluating debt management?",
+    options: [
+      "Cash Flow",
+      "Net Income",
+      "Debt-to-Equity Ratio",
+      "Revenue"
+    ],
+    correctOption: "Debt-to-Equity Ratio",
+    difficulty: "intermediate"
+  },
+  {
+    question: "The quick ratio is used to analyze a company’s short-term liquidity.",
+    options: [
+      "Net margin",
+      "Inventory turnover",
+      "Asset turnover",
+      "Quick ratio"
+    ],
+    correctOption: "Quick ratio",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which of the following affects the cost of capital?",
+    options: [
+      "Revenue",
+      "Inventory level",
+      "Interest rates",
+      "Gross margin"
+    ],
+    correctOption: "Interest rates",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which financial metric is most useful for evaluating investment returns?",
+    options: [
+      "Operating Cost",
+      "Gross Margin",
+      "Current Assets",
+      "Internal Rate of Return"
+    ],
+    correctOption: "Internal Rate of Return",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which of the following capital budgeting techniques explicitly considers the time value of money and provides a direct measure of the increase in shareholder wealth?",
+    options: [
+      "Payback Period",
+      "Profitability Index (PI)",
+      "Net Present Value (NPV)",
+      "Accounting Rate of Return"
+    ],
+    correctOption: "Net Present Value (NPV)",
+    difficulty: "intermediate"
+  },
+  {
+    question: "A company is evaluating a project with an initial investment of $1,000,000 and the following expected cash flows: Year 1: $300,000, Year 2: $400,000, Year 3: $500,000, Year 4: $200,000. If the company's cost of capital is 10%, what is the project's NPV?",
+    options: [
+      "$136,603.31",
+      "$400,000.00",
+      "-$63,396.69",
+      "$100,000.00"
+    ],
+    correctOption: "$136,603.31",
+    difficulty: "intermediate"
+  },
+  {
+    question: "The weighted average cost of capital (WACC) is the:",
+    options: [
+      "Average rate of return a company must earn on its existing asset base.",
+      "Cost of debt multiplied by the percentage of debt financing.",
+      "Cost of equity multiplied by the percentage of equity financing.",
+      "Minimum rate of return a company must earn on new investments to maintain its existing value."
+    ],
+    correctOption: "Minimum rate of return a company must earn on new investments to maintain its existing value.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which of the following factors would typically increase a company's WACC?",
+    options: [
+      "A decrease in the company's debt-to-equity ratio.",
+      "An increase in the risk-free rate.",
+      "A decrease in the company's beta.",
+      "A decrease in the company's tax rate."
+    ],
+    correctOption: "An increase in the risk-free rate.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "According to the Modigliani-Miller (MM) Proposition I (without taxes), the value of a firm is independent of its:",
+    options: [
+      "Capital structure.",
+      "Dividend policy.",
+      "Investment decisions.",
+      "Operating income."
+    ],
+    correctOption: "Capital structure.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "In the presence of corporate taxes, MM Proposition I suggests that the optimal capital structure involves:",
+    options: [
+      "100% equity financing.",
+      "As much debt financing as possible.",
+      "A moderate level of debt financing.",
+      "No debt financing."
+    ],
+    correctOption: "As much debt financing as possible.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which of the following is a disadvantage of using the payback period as a capital budgeting technique?",
+    options: [
+      "It is not useful for small projects.",
+      "It does not consider the time value of money.",
+      "It is difficult to calculate.",
+      "It always leads to incorrect investment decisions."
+    ],
+    correctOption: "It does not consider the time value of money.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "The degree of operating leverage (DOL) measures the sensitivity of:",
+    options: [
+      "Sales to changes in fixed costs.",
+      "Earnings per share (EPS) to changes in sales.",
+      "Net income to changes in EBIT.",
+      "Earnings before interest and taxes (EBIT) to changes in sales."
+    ],
+    correctOption: "Earnings before interest and taxes (EBIT) to changes in sales.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "A company has fixed operating costs of $500,000, a per-unit variable cost of $20, and a selling price of $30 per unit. What is the break-even point in units?",
+    options: [
+      "50,000 units",
+      "16,667 units",
+      "25,000 units",
+      "66,667 units"
+    ],
+    correctOption: "50,000 units",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which of the following is NOT a key assumption of the Black-Scholes option pricing model?",
+    options: [
+      "The risk-free interest rate is constant.",
+      "There are no transaction costs.",
+      "The stock pays constant dividends.",
+      "Stock prices follow a lognormal distribution."
+    ],
+    correctOption: "The stock pays constant dividends.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "The efficient market hypothesis (EMH) in its semi-strong form suggests that security prices reflect:",
+    options: [
+      "Only past market data.",
+      "No information at all.",
+      "All public and private information.",
+      "All publicly available information."
+    ],
+    correctOption: "All publicly available information.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which of the following is a primary goal of working capital management?",
+    options: [
+      "Maximizing shareholder wealth by taking on high-risk, high-return projects.",
+      "Investing surplus cash in highly illiquid assets to maximize returns.",
+      "Minimizing the cost of long-term financing.",
+      "Ensuring the company has sufficient liquid assets to meet its short-term obligations."
+    ],
+    correctOption: "Ensuring the company has sufficient liquid assets to meet its short-term obligations.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "A company offers credit terms of 2/10, net 30. This means that a customer will receive a:",
+    options: [
+      "10% discount if paid within 2 days.",
+      "2% discount if paid within 30 days.",
+      "30% discount if paid within 2 days.",
+      "2% discount if paid within 10 days."
+    ],
+    correctOption: "2% discount if paid within 10 days.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which of the following inventory management techniques aims to minimize the total inventory costs by determining the optimal order quantity?",
+    options: [
+      "ABC Analysis",
+      "Economic Order Quantity (EOQ)",
+      "Materials Requirement Planning (MRP)",
+      "Just-in-Time (JIT)"
+    ],
+    correctOption: "Economic Order Quantity (EOQ)",
+    difficulty: "intermediate"
+  },
+  {
+    question: "The capital asset pricing model (CAPM) is used to determine the:",
+    options: [
+      "Required rate of return on an asset.",
+      "Accounting profit of a company.",
+      "Historical average return of a stock.",
+      "Optimal capital structure of a firm."
+    ],
+    correctOption: "Required rate of return on an asset.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Beta is a measure of a stock's:",
+    options: [
+      "Unsystematic risk.",
+      "Total risk.",
+      "Systematic risk.",
+      "Diversifiable risk."
+    ],
+    correctOption: "Systematic risk.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "A stock has a beta of 1.2. If the market risk premium is 8% and the risk-free rate is 5%, what is the expected return on the stock according to the CAPM?",
+    options: [
+      "9.6%",
+      "13.0%",
+      "14.6%",
+      "17.0%"
+    ],
+    correctOption: "14.6%",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which of the following is a source of spontaneous financing?",
+    options: [
+      "Issuing new common stock.",
+      "Selling bonds.",
+      "Accounts payable.",
+      "Taking out a long-term bank loan."
+    ],
+    correctOption: "Accounts payable.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Commercial paper is a:",
+    options: [
+      "Long-term debt instrument issued by corporations.",
+      "Short-term, unsecured promissory note issued by corporations.",
+      "Type of preferred stock with a fixed dividend rate.",
+      "Government bond with a maturity of less than one year."
+    ],
+    correctOption: "Short-term, unsecured promissory note issued by corporations.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which of the following is a characteristic of preferred stock?",
+    options: [
+      "Obligatory dividend payments.",
+      "Voting rights in the company.",
+      "Fixed dividend rate.",
+      "Dividends are tax-deductible for the issuing company."
+    ],
+    correctOption: "Fixed dividend rate.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "The dividend discount model (DDM) is most appropriate for valuing:",
+    options: [
+      "Privately held companies.",
+      "Companies that do not pay dividends.",
+      "Mature, stable companies with a history of dividend payments.",
+      "Companies with highly volatile earnings."
+    ],
+    correctOption: "Mature, stable companies with a history of dividend payments.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "A company's stock is currently trading at $50 per share. The company is expected to pay a dividend of $2.50 next year, and the dividend is expected to grow at a constant rate of 5% per year. What is the cost of equity using the constant growth DDM?",
+    options: [
+      "10%",
+      "15%",
+      "5%",
+      "10.5%"
+    ],
+    correctOption: "10%",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which of the following is a limitation of financial ratios?",
+    options: [
+      "They provide insights into a company's performance.",
+      "Different accounting methods can distort comparisons.",
+      "They are easy to calculate.",
+      "They always indicate the true financial health of a company."
+    ],
+    correctOption: "Different accounting methods can distort comparisons.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "A high current ratio may indicate:",
+    options: [
+      "Efficient inventory management.",
+      "Strong profitability.",
+      "Excessive liquidity and inefficient use of assets.",
+      "High leverage."
+    ],
+    correctOption: "Excessive liquidity and inefficient use of assets.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which of the following ratios measures a company's ability to meet its short-term obligations?",
+    options: [
+      "Total asset turnover.",
+      "Quick ratio.",
+      "Debt-to-equity ratio.",
+      "Profit margin."
+    ],
+    correctOption: "Quick ratio.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "The degree of financial leverage (DFL) measures the sensitivity of:",
+    options: [
+      "Earnings per share (EPS) to changes in EBIT.",
+      "Sales to changes in fixed costs.",
+      "Net income to changes in sales.",
+      "EBIT to changes in sales."
+    ],
+    correctOption: "Earnings per share (EPS) to changes in EBIT.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which of the following is a disadvantage of debt financing?",
+    options: [
+      "Interest payments are tax-deductible.",
+      "It can increase financial risk.",
+      "Debt does not dilute ownership.",
+      "It typically has a lower cost than equity."
+    ],
+    correctOption: "It can increase financial risk.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "A company is considering issuing new common stock. Which of the following is a potential drawback?",
+    options: [
+      "No impact on the company's debt-to-equity ratio.",
+      "Increased financial leverage.",
+      "Dilution of existing shareholders' ownership.",
+      "Tax-deductibility of dividend payments."
+    ],
+    correctOption: "Dilution of existing shareholders' ownership.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which of the following is a method of managing transaction exposure to exchange rate risk?",
+    options: [
+      "Economic hedging.",
+      "Forward contracts.",
+      "Diversification of international operations.",
+      "Translation adjustment."
+    ],
+    correctOption: "Forward contracts.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Political risk in international finance refers to the risk of:",
+    options: [
+      "Changes in a country's accounting standards.",
+      "Adverse government actions affecting a company's cash flows.",
+      "Differences in legal systems across countries.",
+      "Fluctuations in exchange rates."
+    ],
+    correctOption: "Adverse government actions affecting a company's cash flows.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "A firm with high operating leverage will experience:",
+    options: [
+      "Stable profits regardless of sales changes.",
+      "Small changes in EBIT for large changes in sales.",
+      "Large changes in EBIT for small changes in sales.",
+      "Lower break-even points."
+    ],
+    correctOption: "Large changes in EBIT for small changes in sales.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "The concept of agency costs refers to the costs arising from:",
+    options: [
+      "The possibility of bankruptcy.",
+      "The cost of issuing new securities.",
+      "The cost of debt financing.",
+      "Conflicts of interest between a company's management and its shareholders."
+    ],
+    correctOption: "Conflicts of interest between a company's management and its shareholders.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "Which of the following mechanisms can help mitigate agency problems?",
+    options: [
+      "Decreasing the size of the board of directors.",
+      "Executive stock options.",
+      "Increasing the use of debt financing.",
+      "Reducing the frequency of dividend payments."
+    ],
+    correctOption: "Executive stock options.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "The profitability index (PI) is calculated as:",
+    options: [
+      "Initial investment divided by the present value of future cash flows.",
+      "Initial investment minus the net present value.",
+      "Present value of future cash flows divided by the initial investment.",
+      "Net present value divided by the initial investment."
+    ],
+    correctOption: "Present value of future cash flows divided by the initial investment.",
+    difficulty: "intermediate"
+  },
+  {
+    question: "A project has an initial investment of $500,000 and a profitability index of 1.15. What is the project's net present value?",
+    options: [
+      "$425,000",
+      "-$75,000",
+      "$575,000",
+      "$75,000"
+    ],
+    correctOption: "$75,000",
+    difficulty: "advanced"
+  },
+  {
+    question: "The internal rate of return (IRR) is the discount rate that makes the:",
+    options: [
+      "Profitability index equal to zero.",
+      "Net present value equal to zero.",
+      "Net present value equal to the initial investment.",
+      "Present value of future cash flows equal to zero."
+    ],
+    correctOption: "Net present value equal to zero.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a potential problem with using the IRR as a capital budgeting tool?",
+    options: [
+      "It may lead to incorrect decisions when comparing mutually exclusive projects with different scales.",
+      "It always provides the same decision as the NPV.",
+      "It is difficult to calculate.",
+      "It explicitly considers the time value of money."
+    ],
+    correctOption: "It may lead to incorrect decisions when comparing mutually exclusive projects with different scales.",
+    difficulty: "advanced"
+  },
+  {
+    question: "The modified internal rate of return (MIRR) addresses some of the limitations of the IRR by assuming that cash flows are reinvested at the:",
+    options: [
+      "Cost of capital.",
+      "Risk-free rate.",
+      "Accounting rate of return.",
+      "IRR."
+    ],
+    correctOption: "Cost of capital.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a method of raising long-term capital?",
+    options: [
+      "Trade credit.",
+      "Leasing.",
+      "Commercial paper.",
+      "Bank overdraft."
+    ],
+    correctOption: "Leasing.",
+    difficulty: "beginner"
+  },
+  {
+    question: "In a leveraged buyout (LBO), a company is acquired primarily using:",
+    options: [
+      "Government grants.",
+      "Retained earnings.",
+      "Debt financing.",
+      "Equity financing."
+    ],
+    correctOption: "Debt financing.",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a disadvantage of leasing from the lessee's perspective?",
+    options: [
+      "The asset may not be owned at the end of the lease term.",
+      "It can provide tax benefits.",
+      "It can conserve working capital.",
+      "It may offer more flexibility than purchasing."
+    ],
+    correctOption: "The asset may not be owned at the end of the lease term.",
+    difficulty: "beginner"
+  },
+  {
+    question: "The optimal capital structure is the one that:",
+    options: [
+      "Maximizes the amount of debt financing.",
+      "Minimizes the amount of equity financing.",
+      "Maximizes the firm's value.",
+      "Minimizes the cost of equity."
+    ],
+    correctOption: "Maximizes the firm's value.",
+    difficulty: "beginner"
+  },
+  {
+    question: "According to the pecking order theory, firms prefer to finance new investments using:",
+    options: [
+      "Any source of financing with the lowest cost.",
+      "Equity, then debt, then internal funds.",
+      "Internal funds, then debt, then equity.",
+      "Debt, then equity, then internal funds."
+    ],
+    correctOption: "Internal funds, then debt, then equity.",
+    difficulty: "beginner"
+  },
+  {
+    question: "It requires the issuer to retire a portion of the bonds each year.",
+    options: [
+      "It extends the bond's maturity date.",
+      "It reduces the bond's credit rating.",
+      "It increases the bond's coupon rate."
+    ],
+    correctOption: "It requires the issuer to retire a portion of the bonds each year.",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a type of risk that cannot be diversified away?",
+    options: [
+      "Financial risk.",
+      "Industry risk.",
+      "Company-specific risk.",
+      "Market risk."
+    ],
+    correctOption: "Market risk.",
+    difficulty: "beginner"
+  },
+  {
+    question: "The security market line (SML) shows the relationship between:",
+    options: [
+      "Risk and return for only efficient portfolios.",
+      "Systematic risk and expected return for individual securities.",
+      "Unsystematic risk and expected return for individual securities.",
+      "Risk and return for all securities."
+    ],
+    correctOption: "Systematic risk and expected return for individual securities.",
+    difficulty: "beginner"
+  },
+  {
+    question: "The beta of the market portfolio is:",
+    options: [
+      "1.5",
+      "1",
+      "0",
+      "0.5"
+    ],
+    correctOption: "1",
+    difficulty: "beginner"
+  },
+  {
+    question: "Which of the following is a characteristic of a zero-coupon bond?",
+    options: [
+      "It is sold at a deep discount to its face value.",
+      "It has a short maturity period.",
+      "Its coupon rate is equal to its yield to maturity.",
+      "It pays interest semi-annually."
+    ],
+    correctOption: "It is sold at a deep discount to its face value.",
+    difficulty: "beginner"
+  },
+  {
+    question: "The yield to maturity (YTM) on a bond is:",
+    options: [
+      "The bond's current yield.",
+      "The bond's coupon rate.",
+      "The total return anticipated on a bond if it is held until it matures.",
+      "The return earned if the bond is sold before maturity."
+    ],
+    correctOption: "The total return anticipated on a bond if it is held until it matures.",
+    difficulty: "beginner"
+  },
+  {
+    question: "If a bond's coupon rate is lower than its yield to maturity, the bond is selling at a:",
+    options: [
+      "Premium.",
+      "Par.",
+      "Face value.",
+      "Discount."
+    ],
+    correctOption: "Discount.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a type of corporate bond?",
+    options: [
+      "Debenture.",
+      "Treasury bond.",
+      "Savings bond.",
+      "Municipal bond."
+    ],
+    correctOption: "Debenture.",
+    difficulty: "advanced"
+  },
+  {
+    question: "A convertible bond gives the bondholder the right to:",
+    options: [
+      "Receive a higher coupon rate.",
+      "Convert the bond into preferred stock.",
+      "Extend the bond's maturity date.",
+      "Convert the bond into common stock."
+    ],
+    correctOption: "Convert the bond into common stock.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a measure of a bond's sensitivity to changes in interest rates?",
+    options: [
+      "Duration.",
+      "Yield to maturity.",
+      "Coupon rate.",
+      "Current yield."
+    ],
+    correctOption: "Duration.",
+    difficulty: "advanced"
+  },
+  {
+    question: "A bond with a longer duration is more sensitive to changes in:",
+    options: [
+      "Credit risk.",
+      "Liquidity.",
+      "Inflation.",
+      "Interest rates."
+    ],
+    correctOption: "Interest rates.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a type of derivative security?",
+    options: [
+      "Common stock.",
+      "Futures contract.",
+      "Bond.",
+      "Preferred stock."
+    ],
+    correctOption: "Futures contract.",
+    difficulty: "advanced"
+  },
+  {
+    question: "An option gives the holder the:",
+    options: [
+      "Right to receive dividend payments.",
+      "Obligation to buy or sell an asset.",
+      "Right, but not the obligation, to buy or sell an asset.",
+      "Right to vote on company matters."
+    ],
+    correctOption: "Right, but not the obligation, to buy or sell an asset.",
+    difficulty: "advanced"
+  },
+  {
+    question: "A call option gives the holder the right to:",
+    options: [
+      "Sell an asset at a specified price.",
+      "Buy an asset at a specified price.",
+      "Receive dividend payments.",
+      "Receive interest payments."
+    ],
+    correctOption: "Buy an asset at a specified price.",
+    difficulty: "advanced"
+  },
+  {
+    question: "A put option gives the holder the right to:",
+    options: [
+      "Sell an asset at a specified price.",
+      "Receive interest payments.",
+      "Buy an asset at a specified price.",
+      "Receive dividend payments."
+    ],
+    correctOption: "Sell an asset at a specified price.",
+    difficulty: "advanced"
+  },
+  {
+    question: "The strike price of an option is the:",
+    options: [
+      "Price of the underlying asset when the option is first issued.",
+      "Price of the underlying asset at the expiration date.",
+      "Price at which the underlying asset can be bought or sold.",
+      "Price at which the option is purchased."
+    ],
+    correctOption: "Price at which the underlying asset can be bought or sold.",
+    difficulty: "advanced"
+  },
+  {
+    question: "An option is 'in the money' when:",
+    options: [
+      "Its strike price is equal to the market price of the underlying asset.",
+      "Its strike price is lower than the market price of the underlying asset (for a call option).",
+      "The option's expiration date has passed.",
+      "Its strike price is higher than the market price of the underlying asset (for a call option)."
+    ],
+    correctOption: "Its strike price is lower than the market price of the underlying asset (for a call option).",
+    difficulty: "advanced"
+  },
+  {
+    question: "The time value of an option is:",
+    options: [
+      "The intrinsic value of the option.",
+      "The portion of the option's premium that is attributable to the time remaining until expiration.",
+      "The option's market price.",
+      "The option's strike price."
+    ],
+    correctOption: "The portion of the option's premium that is attributable to the time remaining until expiration.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following factors increases the value of a call option?",
+    options: [
+      "A decrease in the market price of the underlying asset.",
+      "A decrease in the risk-free interest rate.",
+      "An increase in the time until expiration.",
+      "A decrease in the volatility of the underlying asset."
+    ],
+    correctOption: "An increase in the time until expiration.",
+    difficulty: "advanced"
+  },
+  {
+    question: "A futures contract is an agreement to:",
+    options: [
+      "Sell an asset at a specified price at any time before expiration.",
+      "Buy or sell an asset at the current market price.",
+      "Buy or sell an asset at a specified price on a future date.",
+      "Buy an asset at a specified price at any time before expiration."
+    ],
+    correctOption: "Buy or sell an asset at a specified price on a future date.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Hedging is a strategy used to:",
+    options: [
+      "Increase leverage.",
+      "Speculate on price movements.",
+      "Maximize potential profits.",
+      "Minimize risk."
+    ],
+    correctOption: "Minimize risk.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a type of risk in international finance?",
+    options: [
+      "Exchange rate risk.",
+      "Business risk.",
+      "Financial risk.",
+      "Operating risk."
+    ],
+    correctOption: "Exchange rate risk.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Translation exposure refers to the risk that:",
+    options: [
+      "A foreign government will take over a company's assets.",
+      "Exchange rate changes will affect the value of a company's foreign currency-denominated assets and liabilities.",
+      "A company will default on its foreign debt obligations.",
+      "Exchange rate changes will affect a company's future cash flows."
+    ],
+    correctOption: "Exchange rate changes will affect the value of a company's foreign currency-denominated assets and liabilities.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Economic exposure refers to the risk that:",
+    options: [
+      "Exchange rate changes will affect the value of a company's foreign currency-denominated assets and liabilities.",
+      "Exchange rate changes will affect a company's future cash flows.",
+      "A company will default on its foreign debt obligations.",
+      "A foreign government will take over a company's assets."
+    ],
+    correctOption: "Exchange rate changes will affect a company's future cash flows.",
+    difficulty: "advanced"
+  },
+  {
+    question: "A company can use a forward contract to hedge against:",
+    options: [
+      "Translation exposure.",
+      "Political risk.",
+      "Economic exposure.",
+      "Transaction exposure."
+    ],
+    correctOption: "Transaction exposure.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a method of managing working capital?",
+    options: [
+      "Investing in fixed assets.",
+      "Issuing long-term debt.",
+      "Increasing dividend payments.",
+      "Optimizing inventory levels."
+    ],
+    correctOption: "Optimizing inventory levels.",
+    difficulty: "advanced"
+  },
+  {
+    question: "The cash conversion cycle (CCC) measures the time it takes for a company to:",
+    options: [
+      "Convert accounts payable into cash.",
+      "Convert inventory into cash.",
+      "Convert sales into cash.",
+      "Convert cash into sales."
+    ],
+    correctOption: "Convert inventory into cash.",
+    difficulty: "advanced"
+  },
+  {
+    question: "A shorter cash conversion cycle is generally preferred because it indicates:",
+    options: [
+      "Slower collection of receivables.",
+      "More efficient working capital management.",
+      "Lower inventory turnover.",
+      "Higher profitability."
+    ],
+    correctOption: "More efficient working capital management.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a component of the cash conversion cycle?",
+    options: [
+      "Debt-to-equity ratio.",
+      "Profit margin.",
+      "Return on assets.",
+      "Inventory turnover period."
+    ],
+    correctOption: "Inventory turnover period.",
+    difficulty: "advanced"
+  },
+  {
+    question: "The economic order quantity (EOQ) model assumes that:",
+    options: [
+      "Ordering costs and holding costs are constant.",
+      "Demand is uncertain.",
+      "Quantity discounts are available.",
+      "Lead time is variable."
+    ],
+    correctOption: "Ordering costs and holding costs are constant.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a cost associated with holding inventory?",
+    options: [
+      "Shipping costs.",
+      "Ordering costs.",
+      "Storage costs.",
+      "Stockout costs."
+    ],
+    correctOption: "Storage costs.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a cost associated with ordering inventory?",
+    options: [
+      "Handling costs.",
+      "Insurance costs.",
+      "Clerical costs.",
+      "Obsolescence costs."
+    ],
+    correctOption: "Clerical costs.",
+    difficulty: "advanced"
+  },
+  {
+    question: "The just-in-time (JIT) inventory management system aims to:",
+    options: [
+      "Minimize inventory levels.",
+      "Order inventory in large batches.",
+      "Maintain large quantities of inventory.",
+      "Maximize inventory turnover."
+    ],
+    correctOption: "Minimize inventory levels.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a benefit of JIT inventory management?",
+    options: [
+      "Lower inventory turnover.",
+      "Higher ordering costs.",
+      "Increased risk of stockouts.",
+      "Reduced storage costs."
+    ],
+    correctOption: "Reduced storage costs.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a disadvantage of JIT inventory management?",
+    options: [
+      "Reduced ordering costs.",
+      "Lower storage costs.",
+      "Higher inventory turnover.",
+      "Increased risk of stockouts."
+    ],
+    correctOption: "Increased risk of stockouts.",
+    difficulty: "advanced"
+  },
+  {
+    question: "The ABC inventory system categorizes inventory based on its:",
+    options: [
+      "Physical size.",
+      "Demand.",
+      "Liquidity.",
+      "Value."
+    ],
+    correctOption: "Value.",
+    difficulty: "advanced"
+  },
+  {
+    question: "In the ABC inventory system, 'A' items represent:",
+    options: [
+      "Medium-value items with moderate demand.",
+      "High-value items with high demand.",
+      "Low-value items with high demand.",
+      "Low-value items with low demand."
+    ],
+    correctOption: "High-value items with high demand.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a goal of accounts receivable management?",
+    options: [
+      "Maximizing the collection period.",
+      "Speeding up the collection of receivables.",
+      "Minimizing sales revenue.",
+      "Offering the most lenient credit terms possible."
+    ],
+    correctOption: "Speeding up the collection of receivables.",
+    difficulty: "advanced"
+  },
+  {
+    question: "The average collection period measures the:",
+    options: [
+      "Average time it takes to collect cash from customers.",
+      "Average time it takes to pay suppliers.",
+      "Average time it takes to produce goods.",
+      "Average time it takes to sell inventory."
+    ],
+    correctOption: "Average time it takes to collect cash from customers.",
+    difficulty: "advanced"
+  },
+  {
+    question: "A longer average collection period indicates:",
+    options: [
+      "Efficient collection of receivables.",
+      "Inefficient collection of receivables.",
+      "Low credit risk.",
+      "High sales volume."
+    ],
+    correctOption: "Inefficient collection of receivables.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a tool for monitoring accounts receivable?",
+    options: [
+      "Aging schedule.",
+      "Debt-to-equity ratio.",
+      "Current ratio.",
+      "Inventory turnover ratio."
+    ],
+    correctOption: "Aging schedule.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a factor to consider when setting credit terms?",
+    options: [
+      "Company's profitability.",
+      "Company's inventory turnover.",
+      "Company's debt-to-equity ratio.",
+      "Industry norms."
+    ],
+    correctOption: "Industry norms.",
+    difficulty: "advanced"
+  },
+  {
+    question: "A tight credit policy is characterized by:",
+    options: [
+      "Offering no credit to customers.",
+      "Offering credit to all customers regardless of their creditworthiness.",
+      "Strict credit terms and low credit limits.",
+      "Lenient credit terms and high credit limits."
+    ],
+    correctOption: "Strict credit terms and low credit limits.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a method of financing accounts receivable?",
+    options: [
+      "Selling bonds.",
+      "Factoring.",
+      "Taking out a long-term bank loan.",
+      "Issuing common stock."
+    ],
+    correctOption: "Factoring.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Factoring involves:",
+    options: [
+      "Selling accounts receivable to a third party at a discount.",
+      "Borrowing money using accounts receivable as collateral.",
+      "Extending credit to customers.",
+      "Collecting cash from customers."
+    ],
+    correctOption: "Selling accounts receivable to a third party at a discount.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a disadvantage of factoring?",
+    options: [
+      "It simplifies accounts receivable management.",
+      "It can be expensive.",
+      "It can improve a company's cash flow.",
+      "It can reduce the risk of bad debts."
+    ],
+    correctOption: "It can be expensive.",
+    difficulty: "advanced"
+  },
+  {
+    question: "A lockbox system is used to:",
+    options: [
+      "Store inventory.",
+      "Manage accounts payable.",
+      "Speed up the collection of cash from customers.",
+      "Secure valuable documents."
+    ],
+    correctOption: "Speed up the collection of cash from customers.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a method of managing accounts payable?",
+    options: [
+      "Taking advantage of trade credit.",
+      "Factoring accounts receivable.",
+      "Speeding up payments to suppliers.",
+      "Offering cash discounts to customers."
+    ],
+    correctOption: "Taking advantage of trade credit.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Trade credit is financing obtained from:",
+    options: [
+      "Suppliers.",
+      "Customers.",
+      "Shareholders.",
+      "Banks."
+    ],
+    correctOption: "Suppliers.",
+    difficulty: "advanced"
+  },
+  {
+    question: "A company receives credit terms of 1/15, net 45. This means that:",
+    options: [
+      "The company must pay within 15 days.",
+      "The company must pay within 1 day.",
+      "The company must pay within 45 days.",
+      "The company receives a 1% discount if it pays within 45 days."
+    ],
+    correctOption: "The company receives a 1% discount if it pays within 15 days.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a disadvantage of delaying payments to suppliers?",
+    options: [
+      "It can improve a company's cash flow in the short term.",
+      "It can result in lost cash discounts.",
+      "It can damage a company's relationship with its suppliers.",
+      "It can reduce the company's credit rating."
+    ],
+    correctOption: "It can damage a company's relationship with its suppliers.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a short-term financing option?",
+    options: [
+      "Issuing preferred stock.",
+      "Commercial paper.",
+      "Taking out a long-term bank loan.",
+      "Issuing bonds."
+    ],
+    correctOption: "Commercial paper.",
+    difficulty: "advanced"
+  },
+  {
+    question: "A line of credit is:",
+    options: [
+      "A loan with a fixed repayment schedule.",
+      "An agreement that allows a company to borrow up to a specified amount.",
+      "A type of bond.",
+      "A type of preferred stock."
+    ],
+    correctOption: "An agreement that allows a company to borrow up to a specified amount.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a characteristic of commercial paper?",
+    options: [
+      "It is issued by corporations.",
+      "It has a maturity of more than one year.",
+      "It is secured by collateral.",
+      "It pays interest semi-annually."
+    ],
+    correctOption: "It is issued by corporations.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Retained earnings represent:",
+    options: [
+      "The portion of a company's profit that is reinvested in the business.",
+      "The amount of cash a company has on hand.",
+      "The total profit a company has earned over its lifetime.",
+      "The portion of a company's profit that is paid out as dividends."
+    ],
+    correctOption: "The portion of a company's profit that is reinvested in the business.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is an advantage of using retained earnings for financing?",
+    options: [
+      "It has no cost.",
+      "It increases a company's debt-to-equity ratio.",
+      "It is tax-deductible.",
+      "It does not dilute ownership."
+    ],
+    correctOption: "It does not dilute ownership.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a disadvantage of using retained earnings for financing?",
+    options: [
+      "It is not tax-deductible.",
+      "It has a high cost.",
+      "It dilutes ownership.",
+      "It may not be sufficient to fund large projects."
+    ],
+    correctOption: "It may not be sufficient to fund large projects.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a characteristic of common stock?",
+    options: [
+      "Fixed dividend rate.",
+      "Voting rights.",
+      "Dividends are tax-deductible for the issuing company.",
+      "Priority over preferred stock in bankruptcy."
+    ],
+    correctOption: "Voting rights.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a type of long-term debt?",
+    options: [
+      "Commercial paper.",
+      "Line of credit.",
+      "Term loan.",
+      "Trade credit."
+    ],
+    correctOption: "Term loan.",
+    difficulty: "advanced"
+  },
+  {
+    question: "A term loan is a loan with:",
+    options: [
+      "A maturity of less than one year.",
+      "A floating interest rate.",
+      "A maturity of more than one year.",
+      "No fixed repayment schedule."
+    ],
+    correctOption: "A maturity of more than one year.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a method of evaluating capital structure?",
+    options: [
+      "Cash conversion cycle.",
+      "Average collection period.",
+      "Debt-to-equity ratio.",
+      "Inventory turnover ratio."
+    ],
+    correctOption: "Debt-to-equity ratio.",
+    difficulty: "advanced"
+  },
+  {
+    question: "A high debt-to-equity ratio indicates:",
+    options: [
+      "Low financial risk.",
+      "Conservative capital structure.",
+      "Efficient use of equity financing.",
+      "High financial risk."
+    ],
+    correctOption: "High financial risk.",
+    difficulty: "advanced"
+  },
+  {
+    question: "A low debt-to-equity ratio indicates:",
+    options: [
+      "Aggressive capital structure.",
+      "Inefficient use of debt financing.",
+      "High financial risk.",
+      "Low financial risk."
+    ],
+    correctOption: "Low financial risk.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a factor to consider when determining the optimal capital structure?",
+    options: [
+      "Company's inventory turnover.",
+      "Company's cash conversion cycle.",
+      "Company's tax rate.",
+      "Company's average collection period."
+    ],
+    correctOption: "Company's tax rate.",
+    difficulty: "advanced"
+  },
+  {
+    question: "The interest tax shield is the:",
+    options: [
+      "Reduction in taxes due to interest expense.",
+      "Reduction in taxes due to depreciation expense.",
+      "Increase in taxes due to retained earnings.",
+      "Increase in taxes due to dividend payments."
+    ],
+    correctOption: "Reduction in taxes due to interest expense.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a disadvantage of equity financing?",
+    options: [
+      "It does not dilute ownership.",
+      "It does not increase financial risk.",
+      "It can be expensive.",
+      "Dividend payments are tax-deductible."
+    ],
+    correctOption: "It can be expensive.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a method of raising equity capital?",
+    options: [
+      "Taking out a long-term bank loan.",
+      "Issuing common stock.",
+      "Commercial paper.",
+      "Issuing bonds."
+    ],
+    correctOption: "Issuing common stock.",
+    difficulty: "advanced"
+  },
+  {
+    question: "An initial public offering (IPO) is the:",
+    options: [
+      "First time a company issues preferred stock to the public.",
+      "First time a company is acquired by another company.",
+      "First time a company issues common stock to the public.",
+      "First time a company issues bonds to the public."
+    ],
+    correctOption: "First time a company issues common stock to the public.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a reason why a company might go public?",
+    options: [
+      "To decrease its financial leverage.",
+      "To reduce its reporting requirements.",
+      "To raise capital for expansion.",
+      "To reduce its access to capital."
+    ],
+    correctOption: "To raise capital for expansion.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a cost associated with issuing new securities?",
+    options: [
+      "Flotation costs.",
+      "Depreciation expense.",
+      "Interest payments.",
+      "Dividend payments."
+    ],
+    correctOption: "Flotation costs.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Flotation costs include:",
+    options: [
+      "Costs of issuing new securities.",
+      "Costs of holding inventory.",
+      "Costs of delaying payments to suppliers.",
+      "Costs of collecting cash from customers."
+    ],
+    correctOption: "Costs of issuing new securities.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a method of determining the value of a business?",
+    options: [
+      "Cash conversion cycle analysis.",
+      "Discounted cash flow (DCF) analysis.",
+      "Inventory turnover analysis.",
+      "Aging schedule analysis."
+    ],
+    correctOption: "Discounted cash flow (DCF) analysis.",
+    difficulty: "advanced"
+  },
+  {
+    question: "The discounted cash flow (DCF) analysis values a business based on the:",
+    options: [
+      "Historical average of its earnings.",
+      "Book value of its assets.",
+      "Market value of its equity.",
+      "Present value of its future cash flows."
+    ],
+    correctOption: "Present value of its future cash flows.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a component of the DCF analysis?",
+    options: [
+      "Inventory turnover ratio.",
+      "Average collection period.",
+      "Debt-to-equity ratio.",
+      "Free cash flow."
+    ],
+    correctOption: "Free cash flow.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Free cash flow (FCF) represents the cash flow available to:",
+    options: [
+      "Both the company's debt and equity holders.",
+      "Only the company's equity holders.",
+      "Only the company's debt holders.",
+      "The government as tax revenue."
+    ],
+    correctOption: "Both the company's debt and equity holders.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a method of calculating free cash flow?",
+    options: [
+      "Revenue - Cost of goods sold - Operating expenses.",
+      "EBIT + Depreciation - Capital expenditures - Change in working capital.",
+      "Cash flow from operations - Dividends.",
+      "Net income + Interest expense - Depreciation."
+    ],
+    correctOption: "EBIT + Depreciation - Capital expenditures - Change in working capital.",
+    difficulty: "advanced"
+  },
+  {
+    question: "The terminal value in a DCF analysis represents the:",
+    options: [
+      "Sum of all cash flows during the forecast period.",
+      "Value of the company's assets at the end of the forecast period.",
+      "Present value of all cash flows beyond the forecast period.",
+      "Value of the company's equity at the end of the forecast period."
+    ],
+    correctOption: "Present value of all cash flows beyond the forecast period.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a commonly used method for calculating terminal value?",
+    options: [
+      "Historical cost method.",
+      "Market multiple method.",
+      "Book value method.",
+      "Liquidation value method."
+    ],
+    correctOption: "Market multiple method.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a limitation of the DCF analysis?",
+    options: [
+      "It is easy to calculate.",
+      "It always provides an accurate valuation.",
+      "It does not consider the time value of money.",
+      "It is highly sensitive to the assumptions used."
+    ],
+    correctOption: "It is highly sensitive to the assumptions used.",
+    difficulty: "advanced"
+  },
+  {
+    question: "The balance sheet shows a company's:",
+    options: [
+      "Cash inflows and outflows over a period of time.",
+      "Revenues and expenses over a period of time.",
+      "Assets, liabilities, and equity at a specific point in time.",
+      "Earnings per share over a period of time."
+    ],
+    correctOption: "Assets, liabilities, and equity at a specific point in time.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is an asset?",
+    options: [
+      "Bonds payable.",
+      "Retained earnings.",
+      "Accounts payable.",
+      "Inventory."
+    ],
+    correctOption: "Inventory.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a liability?",
+    options: [
+      "Bonds payable.",
+      "Cash.",
+      "Accounts receivable.",
+      "Common stock."
+    ],
+    correctOption: "Bonds payable.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a component of shareholders' equity?",
+    options: [
+      "Accounts payable.",
+      "Retained earnings.",
+      "Land.",
+      "Inventory."
+    ],
+    correctOption: "Retained earnings.",
+    difficulty: "advanced"
+  },
+  {
+    question: "The income statement shows a company's:",
+    options: [
+      "Assets, liabilities, and equity at a specific point in time.",
+      "Earnings per share at a specific point in time.",
+      "Cash inflows and outflows over a period of time.",
+      "Revenues and expenses over a period of time."
+    ],
+    correctOption: "Revenues and expenses over a period of time.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a component of the income statement?",
+    options: [
+      "Accounts receivable.",
+      "Retained earnings.",
+      "Cash.",
+      "Revenue."
+    ],
+    correctOption: "Revenue.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is an expense?",
+    options: [
+      "Common stock.",
+      "Retained earnings.",
+      "Cost of goods sold.",
+      "Revenue."
+    ],
+    correctOption: "Cost of goods sold.",
+    difficulty: "advanced"
+  },
+  {
+    question: "The statement of cash flows shows a company's:",
+    options: [
+      "Cash inflows and outflows over a period of time.",
+      "Assets, liabilities, and equity at a specific point in time.",
+      "Revenues and expenses over a period of time.",
+      "Earnings per share at a specific point in time."
+    ],
+    correctOption: "Cash inflows and outflows over a period of time.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a section of the statement of cash flows?",
+    options: [
+      "Operating activities.",
+      "All of the above.",
+      "Financing activities.",
+      "Investing activities."
+    ],
+    correctOption: "All of the above.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is an example of a cash flow from operating activities?",
+    options: [
+      "Purchase of equipment.",
+      "Collection of cash from customers.",
+      "Payment of dividends.",
+      "Issuance of bonds."
+    ],
+    correctOption: "Collection of cash from customers.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is an example of a cash flow from investing activities?",
+    options: [
+      "Issuance of common stock.",
+      "Payment of interest.",
+      "Collection of cash from customers.",
+      "Purchase of a building."
+    ],
+    correctOption: "Purchase of a building.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is an example of a cash flow from financing activities?",
+    options: [
+      "Purchase of equipment.",
+      "Sale of inventory.",
+      "Collection of cash from customers.",
+      "Issuance of bonds."
+    ],
+    correctOption: "Issuance of bonds.",
+    difficulty: "advanced"
+  },
+  {
+    question: "Which of the following is a limitation of financial statements?",
+    options: [
+      "They are easy to prepare.",
+      "They are based on historical data.",
+      "They are not useful for making investment decisions.",
+      "They provide a complete picture of a company's financial health."
+    ],
+    correctOption: "They are based on historical data.",
+    difficulty: "advanced"
   }
 ];
