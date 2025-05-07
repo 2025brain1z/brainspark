@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { UserButton } from '@clerk/nextjs'; // Import the UserButton component for logged-in users
 import styles from "@/styles/home.module.css";
+import HistoryPopup from '@/components/HistoryPopup';
 
 // Define TypeScript interfaces
 interface Achievement {
@@ -27,6 +28,11 @@ interface ProfileData {
   streak: number;
   achievements: Achievement[];
   badges: Badge[];
+  quizHistory: {
+    date: Date;
+    courseName: string;
+    score: string;
+  }[];
 }
 
 interface LeaderboardEntry {
@@ -40,6 +46,7 @@ const Profile: React.FC = () => {
   const [profileData, setProfileData] = useState<ProfileData | null>(null);
   const [leaderboard, setLeaderboard] = useState<LeaderboardEntry[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [showHistory, setShowHistory] = useState(false);
   const [isRegistered, setIsRegistered] = useState(false);
 
   useEffect(() => {
@@ -128,13 +135,29 @@ const Profile: React.FC = () => {
 
       {/* Profile Section */}
       <div className="text-center mb-6 mt-6">
-        <h1 className="text-3xl font-bold">{user?.fullName || "Guest"}&apos;s Profile</h1>
+        <div className="flex items-center justify-center gap-2">
+          <h1 className="text-3xl font-bold">
+            {user?.fullName || "Guest"}&apos;s Profile
+          </h1>
+          <button 
+            onClick={() => setShowHistory(true)}
+            className="hover:opacity-80 transition-opacity"
+          >
+            <Image
+              src="/history.svg"
+              alt="View History"
+              width={24}
+              height={24}
+              className="cursor-pointer"
+            />
+          </button>
+        </div>
         <p className="text-gray-500">Track your progress and achievements</p>
       </div>
 
       {/* Daily Streak */}
       <div className="bg-yellow-100 p-4 rounded-lg mb-4 text-center">
-        <h2 className="text-xl font-semibold">🔥 Daily Streak: {profileData?.streak || 0} Days</h2>
+        <h2 className="text-xl font-semibold">🔥 Daily Streak: {profileData?.streak || 0} {(profileData?.streak === 1) ? 'Day' : 'Days'}</h2>
         <p className="text-gray-600">Keep going! Complete a challenge every day.</p>
       </div>
 
@@ -204,6 +227,11 @@ const Profile: React.FC = () => {
           </tbody>
         </table>
       </div>
+      {showHistory && (
+        <HistoryPopup 
+          onClose={() => setShowHistory(false)}
+        />
+      )}
     </div>
   );
 };

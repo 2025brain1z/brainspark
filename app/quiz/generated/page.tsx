@@ -130,6 +130,21 @@ function QuizContent() {
     }
 
     try {
+      // Save quiz history
+      await fetch('/api/quiz-history', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          userId: userId,
+          courseName: topicName,
+          score: `${newScore}/${questions.length}`
+        }),
+      });      
+    } catch (error) {
+      console.error('Error updating quiz history:', error);
+    }
+
+    try {
       // ✅ Send final update request
       await fetch("/api/user/update", {
         method: "PUT",

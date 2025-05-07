@@ -141,6 +141,21 @@ export default function Page() {
     }
 
     try {
+      // Save quiz history
+      await fetch('/api/quiz-history', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          userId: userId,
+          courseName: name,
+          score: `${newScore}/${questions.length}`
+        }),
+      });      
+    } catch (error) {
+      console.error('Error updating quiz history:', error);
+    }
+
+    try {
       
       // ✅ Send final update request
       await fetch("/api/user/update", {

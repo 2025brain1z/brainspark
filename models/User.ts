@@ -1,3 +1,4 @@
+// models/User.ts
 import mongoose from "mongoose";
 
 const achievementSchema = new mongoose.Schema({
@@ -15,6 +16,13 @@ const badgeSchema = new mongoose.Schema({
   earnedAt: { type: Date, default: Date.now } // Optional: track when the user earned it
 });
 
+// Add new history entry schema
+const historyEntrySchema = new mongoose.Schema({
+  date: { type: Date, default: Date.now },
+  courseName: { type: String, required: true },
+  score: { type: String, required: true }
+});
+
 const UserSchema = new mongoose.Schema(
   {
     clerkId: { type: String, unique: true, required: true }, // Clerk's user ID
@@ -25,8 +33,16 @@ const UserSchema = new mongoose.Schema(
     points: { type: Number, default: 0 },
     dailyStreak: { type: Number, default: 0 },
     achievements: { type: [achievementSchema], default: [] }, // Store achievements as objects
+    // Add history array to store quiz results
+    quizHistory: { 
+      type: [historyEntrySchema], 
+      default: [] // Initialize with empty array
+    },
   },
   { timestamps: true }
 );
 
-export default mongoose.models.User || mongoose.model("User", UserSchema);
+// Use this pattern to prevent model recompilation errors
+const User = mongoose.models.User || mongoose.model("User", UserSchema);
+
+export default User;
