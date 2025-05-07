@@ -158,7 +158,7 @@ const Profile: React.FC = () => {
       {/* Daily Streak */}
       <div className="bg-yellow-100 p-4 rounded-lg mb-4 text-center">
         <h2 className="text-xl font-semibold">🔥 Daily Streak: {profileData?.streak || 0} {(profileData?.streak === 1) ? 'Day' : 'Days'}</h2>
-        <p className="text-gray-600">Keep going! Complete a challenge every day.</p>
+        <p className="text-gray-600">Keep going! Complete a quiz every day.</p>
       </div>
 
       {/* Achievements */}

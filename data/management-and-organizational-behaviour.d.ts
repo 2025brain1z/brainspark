@@ -338,7 +338,7 @@ export const questions = [
       "Marketing"
     ],
     correctOption: "Planning",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "Organizational behavior is primarily concerned with:",
@@ -349,7 +349,7 @@ export const questions = [
       "Employee actions and attitudes"
     ],
     correctOption: "Employee actions and attitudes",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "The Hawthorne studies are most closely associated with:",
@@ -360,7 +360,7 @@ export const questions = [
       "Human relations movement"
     ],
     correctOption: "Human relations movement",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "Which management theory emphasizes efficiency and standardization?",
@@ -371,7 +371,7 @@ export const questions = [
       "Systems theory"
     ],
     correctOption: "Scientific management",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "What is the primary focus of the planning function of management?",
@@ -382,7 +382,7 @@ export const questions = [
       "Allocating resources"
     ],
     correctOption: "Setting goals and objectives",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "Which of the following is NOT a level of management?",
@@ -393,7 +393,7 @@ export const questions = [
       "First-line management"
     ],
     correctOption: "Customer management",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "The organizing function of management involves:",
@@ -404,7 +404,7 @@ export const questions = [
       "Structuring work and authority"
     ],
     correctOption: "Structuring work and authority",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "Leading in management involves:",
@@ -415,7 +415,7 @@ export const questions = [
       "Developing new products"
     ],
     correctOption: "Influencing and directing employees",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "Controlling in management refers to:",
@@ -426,7 +426,7 @@ export const questions = [
       "Setting employee salaries"
     ],
     correctOption: "Monitoring performance and taking corrective action",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "Which of the following is an example of a SMART goal?",
@@ -437,7 +437,7 @@ export const questions = [
       "Improve employee morale"
     ],
     correctOption: "Increase sales by 10% in the next quarter",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "Delegation is a key part of:",
@@ -448,7 +448,7 @@ export const questions = [
       "Controlling"
     ],
     correctOption: "Organizing",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "What is span of control?",
@@ -459,7 +459,7 @@ export const questions = [
       "The financial resources available to a department"
     ],
     correctOption: "The number of subordinates a manager can effectively supervise",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "Which leadership style involves high task orientation and low relationship orientation?",
@@ -470,7 +470,7 @@ export const questions = [
       "Supporting"
     ],
     correctOption: "Directing",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "Motivation is best defined as:",
@@ -481,7 +481,7 @@ export const questions = [
       "The willingness to exert high levels of effort"
     ],
     correctOption: "The willingness to exert high levels of effort",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "Which theory of motivation emphasizes needs?",
@@ -492,7 +492,7 @@ export const questions = [
       "Expectancy theory"
     ],
     correctOption: "Maslow's hierarchy of needs",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "Hygiene factors are associated with which motivation theory?",
@@ -503,7 +503,7 @@ export const questions = [
       "Herzberg's two-factor theory"
     ],
     correctOption: "Herzberg's two-factor theory",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "What is job satisfaction?",
@@ -514,7 +514,7 @@ export const questions = [
       "An employee's salary"
     ],
     correctOption: "The degree to which an employee feels positively about their job",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "Groupthink is most likely to occur in:",
@@ -525,7 +525,7 @@ export const questions = [
       "Large groups"
     ],
     correctOption: "Highly cohesive groups",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "Which of the following is a stage of group development?",
@@ -536,7 +536,7 @@ export const questions = [
       "Performing"
     ],
     correctOption: "All of the above",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "Communication is the process of:",
@@ -547,7 +547,7 @@ export const questions = [
       "Sharing meaning"
     ],
     correctOption: "Sharing meaning",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "Which of the following is an example of nonverbal communication?",
@@ -558,7 +558,7 @@ export const questions = [
       "Written report"
     ],
     correctOption: "Facial expressions",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "What is organizational culture?",
@@ -569,7 +569,7 @@ export const questions = [
       "The company's structure"
     ],
     correctOption: "The shared values, beliefs, and assumptions within an organization",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "Which of the following is a dimension of organizational culture?",
@@ -580,7 +580,7 @@ export const questions = [
       "All of the above"
     ],
     correctOption: "All of the above",
-    difficulty: "advanced"
+    difficulty: "intermediate"
   },
   {
     question: "Change management is the process of:",
@@ -591,7 +591,7 @@ export const questions = [
       "Helping individuals and organizations transition from a current state to a desired state"
     ],
     correctOption: "Helping individuals and organizations transition from a current state to a desired state",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "Lewin's Change Model consists of which three steps?",
@@ -602,7 +602,7 @@ export const questions = [
       "Planning, Organizing, Leading"
     ],
     correctOption: "Unfreezing, Changing, Refreezing",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "What is stress in the workplace?",
@@ -613,7 +613,7 @@ export const questions = [
       "A positive work environment"
     ],
     correctOption: "A negative emotional experience",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "Which of the following is a potential source of workplace stress?",
@@ -624,7 +624,7 @@ export const questions = [
       "Work overload"
     ],
     correctOption: "Work overload",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "What is conflict in an organization?",
@@ -635,7 +635,7 @@ export const questions = [
       "A lack of communication"
     ],
     correctOption: "A disagreement between individuals or groups",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "Which conflict resolution style involves finding a mutually beneficial solution?",
@@ -646,7 +646,7 @@ export const questions = [
       "Avoiding"
     ],
     correctOption: "Collaborating",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "Power in an organization can be derived from:",
@@ -657,7 +657,7 @@ export const questions = [
       "Position"
     ],
     correctOption: "All of the above",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "Which of the following is a type of organizational structure?",
@@ -668,7 +668,7 @@ export const questions = [
       "All of the above"
     ],
     correctOption: "All of the above",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "What is human resource management (HRM)?",
@@ -679,7 +679,7 @@ export const questions = [
       "Overseeing the production process"
     ],
     correctOption: "Managing the people within an organization",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "Which of the following is a function of HRM?",
@@ -690,7 +690,7 @@ export const questions = [
       "Training and development"
     ],
     correctOption: "All of the above",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "What is job analysis?",
@@ -701,7 +701,7 @@ export const questions = [
       "Setting employee salaries"
     ],
     correctOption: "Determining the tasks, duties, and responsibilities of a job",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "Which of the following is a method of employee selection?",
@@ -712,7 +712,7 @@ export const questions = [
       "All of the above"
     ],
     correctOption: "All of the above",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "What is employee training?",
@@ -723,7 +723,7 @@ export const questions = [
       "Evaluating employee performance"
     ],
     correctOption: "Providing employees with skills and knowledge",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "Performance appraisal is used to:",
@@ -734,7 +734,7 @@ export const questions = [
       "Determine employee compensation"
     ],
     correctOption: "Evaluate employee performance",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "What is compensation in HRM?",
@@ -745,7 +745,7 @@ export const questions = [
       "Employee training"
     ],
     correctOption: "The process of determining employee pay",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "Which of the following is an example of an employee benefit?",
@@ -756,7 +756,7 @@ export const questions = [
       "Commission"
     ],
     correctOption: "Health insurance",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "What is labor relations?",
@@ -767,7 +767,7 @@ export const questions = [
       "Relationships between management and employees"
     ],
     correctOption: "Relationships between management and employees",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "Which of the following is a type of organizational change?",
@@ -778,7 +778,7 @@ export const questions = [
       "Technological change"
     ],
     correctOption: "All of the above",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "What is innovation in an organization?",
@@ -789,7 +789,7 @@ export const questions = [
       "Reducing costs"
     ],
     correctOption: "Implementing new ideas and processes",
-    difficulty: "advanced"
+    difficulty: "beginner"
   },
   {
     question: "Which of the following is a characteristic of an innovative organization?",

@@ -1,9 +1,10 @@
 // @ts-nocheck
 "use client";
+
+// Import necessary dependencies
 import { useParams } from "next/navigation";
 import { useUser } from "@clerk/nextjs";
 import { useEffect, useState } from "react";
-import { Card } from "@/components/ui/card";
 import Markdown from "react-markdown";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
@@ -13,12 +14,21 @@ import Navbar from "@/components/Navbar";
 import Confetti from "@/components/Confetti";
 import styles from "@/styles/styles.module.css";
 
+/**
+ * Quiz Page Component
+ * Handles the quiz flow including difficulty selection, question display, and results
+ * @returns React component for the quiz interface
+ */
 export default function Page() {
+  // Get quiz name from URL parameters
   const params = useParams();
   const name = params.name as string;
 
+  // Get user authentication details
   const { user } = useUser();
-  const userId = user?.id;  // Ensure this is defined
+  const userId = user?.id;
+
+  // State management for quiz flow
   const [selectedDifficulty, setSelectedDifficulty] = useState<string | null>(null);
   const [difficulty, setDifficulty] = useState<string | null>(null);
   const [questions, setQuestions] = useState([]);
@@ -32,10 +42,16 @@ export default function Page() {
       <span className={styles.blinkingCursor}></span>
     </div>
   );
+
+  // Pagination state
   const [currentBatch, setCurrentBatch] = useState(0);
   const questionsPerPage = 10;
   const [selectedAnswers, setSelectedAnswers] = useState<{[key: number]: string}>({});
 
+  /**
+   * Saves quiz questions to backend for persistence
+   * @param questions - Array of quiz questions to save
+   */
   const saveQuestionsToFile = async (questions) => {
     try {
       await fetch("/api/save-quiz", {
@@ -48,6 +64,10 @@ export default function Page() {
     }
   };
 
+  /**
+   * Initializes the quiz with selected difficulty level
+   * Loads and shuffles questions based on difficulty
+   */
   const startQuiz = async () => {
     setLoadingQuestions(true);
     setDifficulty(selectedDifficulty);
@@ -67,12 +87,17 @@ export default function Page() {
     }
   };
 
+  // Calculate pagination variables
   const totalBatches = Math.ceil(questions.length / questionsPerPage);
   const currentQuestions = questions.slice(
     currentBatch * questionsPerPage,
     (currentBatch + 1) * questionsPerPage
   );
 
+  /**
+   * Handles navigation to next batch of questions
+   * Includes smooth scrolling to top of questions
+   */
   const onNext = () => {
     if (currentBatch + 1 < totalBatches) {
       setCurrentBatch(currentBatch + 1);
@@ -83,6 +108,10 @@ export default function Page() {
     }
   };
   
+  /**
+   * Handles navigation to previous batch of questions
+   * Includes smooth scrolling to top of questions
+   */
   const onPrevious = () => {
     if (currentBatch > 0) {
       setCurrentBatch(currentBatch - 1);
@@ -93,7 +122,11 @@ export default function Page() {
     }
   };
 
-
+  /**
+   * Handles quiz submission
+   * Calculates score, awards medals, updates user progress,
+   * and fetches learning path recommendations
+   */
   const onSubmit = async () => {
     let newScore = 0;
   
@@ -147,7 +180,10 @@ export default function Page() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           userId: userId,
-          courseName: name,
+          courseName: name.split('-')
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(' ')
+            .replace(/%2C/g, ','),
           score: `${newScore}/${questions.length}`
         }),
       });      
@@ -191,9 +227,11 @@ export default function Page() {
       setResponse("Failed to load learning path.");
     }
   };
-  
-  
 
+  /**
+   * Effect hook for animated text display of learning path
+   * Creates typewriter effect for response text
+   */
   useEffect(() => {
     if (response.length === 0) return;
     setOutput("");
@@ -202,10 +240,14 @@ export default function Page() {
     });
   }, [response]);
 
+  /**
+   * Opens quiz results in new window
+   */
   const viewAnswers = () => {
     window.open("/quiz/results", "_blank");
   };
 
+  // Component render with conditional content based on quiz state
   return (
     <div className="flex flex-col h-screen">
       {/* Navbar on Top */}

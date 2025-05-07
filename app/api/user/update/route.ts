@@ -31,7 +31,7 @@ export async function PUT(req: NextRequest) {
       user.badges = [];
     }
 
-    // 🏆 Handling Medals & Badges (Ignore "Try Again")
+    // Handling Medals & Badges (Ignore "Try Again")
     if (medal && medal !== "💔 Try Again") {
       const medalIcon = medalIcons[medal] || "/icon/default-medal.png";
 

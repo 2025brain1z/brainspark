@@ -24,11 +24,11 @@ export default function Courses() {
     },
     "Business": {
       "Accounting": ["Introduction to Doing Business in Africa", "Database Management System", "Business Finance", "Corporate Finance"],
-      "Banking and Finance": ["Essential Maths for Business", "Banking Law and Practice", "Management and Organizational Behavior", "Fixed Income Analysis"],
+      "Banking and Finance": ["Essential Maths for Business", "Banking Law and Practice", "Management and Organizational Behaviour", "Fixed Income Analysis"],
       "Entrepreneurship": ["Fundamentals of Innovation and Entrepreneurship", "Financial Statement for Decision Making", "E-commerce for Entrepreneurship", "Customer Experience for Design"],
     },
     "Engineering": {
-      "Computer Engineering": ["Intro to Engineering", "Computer Systems to Engineering", "Microprocessors and Microcontrollers", "Computer Security"],
+      "Computer Engineering": ["Intro to Engineering", "Computer Systems Engineering", "Microprocessors and Microcontrollers", "Computer Security"],
       "BioMedical Engineering": ["Intro to BioMedical Engineering", "Circuit Theory", "Biochemistry", "Medical Devices and Technologies"],
       "Robotics": ["Engineering Mechanics", "Sensors, Measurements and Instrumentations", "Signals and Systems", "Computer Vision"],
     },

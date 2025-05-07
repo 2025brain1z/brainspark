@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'BrainSpark',
-  description: 'Making learning fun + Help in learning through GenAi',
+  description: 'Making learning fun',
 }
 
 export default function RootLayout({

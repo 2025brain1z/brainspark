@@ -1,4 +1,6 @@
 "use client";
+
+// Import necessary dependencies for quiz functionality
 import { Suspense } from "react";
 import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -11,23 +13,37 @@ import { useUser } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
 import styles from "@/styles/styles.module.css";
 
-// Define the type for a quiz question
+/**
+ * Type definition for quiz questions
+ * @typedef {Object} Question
+ * @property {string} question - The question text
+ * @property {string[]} options - Array of possible answers
+ * @property {string} correctOption - The correct answer
+ */
 type Question = {
   question: string;
   options: string[];
   correctOption: string;
 };
 
+/**
+ * Main quiz content component
+ * Handles quiz state, user interactions, and scoring
+ */
 function QuizContent() {
+  // State management for quiz data and UI
   const [questions, setQuestions] = useState<Question[]>([]);
   const [loading, setLoading] = useState(true);
 
+  // User authentication
   const { user } = useUser();
   const userId = user?.id;
 
+  // URL parameters for topic name
   const searchParams = useSearchParams();
   const topicName = searchParams.get("topic") || "your topic";
 
+  // Quiz state management
   const [score, setScore] = useState(0);
   const [response, setResponse] = useState("");
   const [output, setOutput] = useState(
@@ -37,12 +53,17 @@ function QuizContent() {
       <span className={styles.blinkingCursor}></span>
     </div>
   );
+
+  // Pagination state
   const [currentBatch, setCurrentBatch] = useState(0);
   const questionsPerPage = 10;
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, string>>({});
   const router = useRouter();
   const [difficulty, setDifficulty] = useState<string | null>(null);
 
+  /**
+   * Load saved quiz questions from localStorage on component mount
+   */
   useEffect(() => {
     const storedQuiz = localStorage.getItem("generatedQuiz");
     if (storedQuiz) {
@@ -52,12 +73,17 @@ function QuizContent() {
     setLoading(false);
   }, []);
 
+  // Calculate pagination variables for question batches
   const totalBatches = Math.ceil(questions.length / questionsPerPage);
   const currentQuestions = questions.slice(
     currentBatch * questionsPerPage,
     (currentBatch + 1) * questionsPerPage
   );
 
+  /**
+   * Navigate to next batch of questions
+   * Includes smooth scrolling to top
+   */
   const onNext = () => {
     if (currentBatch + 1 < totalBatches) {
       setCurrentBatch(currentBatch + 1);
@@ -68,6 +94,10 @@ function QuizContent() {
     }
   };
   
+  /**
+   * Navigate to previous batch of questions
+   * Includes smooth scrolling to top
+   */
   const onPrevious = () => {
     if (currentBatch > 0) {
       setCurrentBatch(currentBatch - 1);
@@ -78,12 +108,21 @@ function QuizContent() {
     }
   };
 
+  /**
+   * Reset quiz and return to upload page
+   */
   const onRestart = () => {
     localStorage.removeItem("generatedQuiz");
     router.push("/UploadNotes");
   };
 
+  /**
+   * Handle quiz submission
+   * Calculates score, awards medals, updates user progress
+   * Fetches personalized learning path
+   */
   const onSubmit = async () => {
+    // Score calculation
     let newScore = 0;
 
     questions.forEach((question, index) => {
@@ -98,13 +137,11 @@ function QuizContent() {
     setCurrentBatch(totalBatches);
     setResponse("");
 
-    // Difficulty Multiplier
+    // Points and medals calculation
     const difficultyMultiplier = difficulty === "beginner" ? 1 : difficulty === "intermediate" ? 2 : 3;
-
-    // Quiz Points Calculation
     const quizPoints = newScore * difficultyMultiplier;
 
-    // Medal Determination
+    // Determine medal based on score
     let medal = "";
     let medalPoints = 0;
     if (newScore >= 30) {
@@ -121,7 +158,7 @@ function QuizContent() {
       medalPoints = -15;
     }
 
-    // Total Points Calculation
+    // Total points calculation
     let totalPoints = quizPoints + medalPoints;
 
     if (!userId) {
@@ -145,7 +182,7 @@ function QuizContent() {
     }
 
     try {
-      // ✅ Send final update request
+      // Update user points and medals
       await fetch("/api/user/update", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
@@ -162,7 +199,7 @@ function QuizContent() {
       console.error("Error updating user points:", error);
     }
 
-    // Fetch learning path suggestion
+    // Generate personalized learning path
     try {
       const response = await fetch("/api/chat", {
         method: "POST",
@@ -180,6 +217,10 @@ function QuizContent() {
     }
   };
 
+  /**
+   * Animated text effect for learning path display
+   * Creates typewriter-style animation
+   */
   useEffect(() => {
     if (response.length === 0) return;
     setOutput(
@@ -200,9 +241,10 @@ function QuizContent() {
     });
   }, [response]);
 
+  // Render quiz interface with conditional content based on quiz state
   return (
     <div className="flex flex-col h-screen">
-      {/* ✅ Navbar */}
+      {/* Navbar */}
       <Navbar />
 
       <div className="flex flex-grow">
@@ -445,6 +487,9 @@ function QuizContent() {
   );
 }
 
+/**
+ * Wrapper component with Suspense for loading state
+ */
 export default function GeneratedQuiz() {
   return (
     <Suspense fallback={<div>Loading...</div>}>

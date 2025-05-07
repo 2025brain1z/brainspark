@@ -1,4 +1,3 @@
-// app/api/quiz-history/route.ts
 import { NextResponse } from 'next/server';
 import mongoose from 'mongoose';
 import { connectToDatabase } from "@/lib/mongodb";
@@ -15,7 +14,7 @@ interface HistoryEntry {
 const isDevelopment = process.env.NODE_ENV === 'development';
 async function checkAuth(userId: string) {
   if (isDevelopment) {
-    console.log('⚠️ Auth check bypassed in development mode');
+    console.log('Auth check bypassed in development mode');
     return true; // Always return true in development
   }
   
@@ -35,7 +34,7 @@ export async function GET(request: Request) {
       return NextResponse.json({ error: 'User ID is required' }, { status: 400 });
     }
 
-    // Add auth check
+    // auth check
     if (!(await checkAuth(userId))) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
