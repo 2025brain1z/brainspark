@@ -183,7 +183,8 @@ export default function Page() {
           courseName: name.split('-')
             .map(word => word.charAt(0).toUpperCase() + word.slice(1))
             .join(' ')
-            .replace(/%2C/g, ','),
+            .replace(/%2C/g, ',')
+            .replace(/%2B/g, '+'),
           score: `${newScore}/${questions.length}`
         }),
       });      
@@ -261,7 +262,7 @@ export default function Page() {
         <div className="w-1/4 bg-gray-100 p-6 flex flex-col justify-center">
           <h2 className="text-lg font-semibold">Quiz Navigation</h2>
           <p className="mt-2">
-            You are answering questions for: <strong>{name ? name.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ').replace(/%2C/g, ',') : ""}</strong>
+            You are answering questions for: <strong>{name ? name.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ').replace(/%2C/g, ',').replace(/%2B/g, '+') : ""}</strong>
           </p>
           <p>
             Difficulty: <strong>{difficulty ? difficulty.charAt(0).toUpperCase() + difficulty.slice(1) : "Not Selected"}</strong>
